@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>  
+	<link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+	  <link rel='stylesheet' href='/stylesheets/style.css' />
+	  <link rel='stylesheet' href='/stylesheets/jquery.ad-gallery.css' />
+	  <link rel='stylesheet' href='/stylesheets/gallery.css' />
+	<meta name="viewport" content="width=device-width, user-scalabe=no" />
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="javascripts/chessboard.js"></script>
+	<script src="javascripts/animation.js"></script>
+	<script src="javascripts/jquery.ad-gallery.js"></script>
+  </head>
+  <body>
+
+	<div class="jumbotron">
+	
+	<div id="chess" style="display:inline;float:left">	
+	
+	
+<h3 style="margin-top:60px">World Championship (1972)</h3>	
+<h3 style="margin-bottom:20px">Spassky</h3>	
+	
+		<div class="board" style="border-style:solid;border-width:2px;height:228px;width:228px;margin-left:75px">
+		
+		<% for(var i=0; i<8; i++) {%>
+		<div class="row" style="margin-left:0px">
+
+			<% for (var j=0; j<8; j++) { %>
+
+			<div id=<%=j+i*8%> class="space" style="width:28px;height:28px;display:inline;float:left; background-color:#FFFFFF;margin-right:0px">
+				<div class="piece"><img style="width:25px; height:25px"></img></div>
+			</div>
+
+			<% } %>
+	
+		</div>
+	<% } %>
+	
+	</div>
+	
+	<h3 style="margin-top:20px">Fischer</h3>
+	
+	</div>
+	<span id="signature" style="float:left;display:inline;margin-left:100px"><b>Alexander Filipek</b></span>
+	<div id="nav">
+	<ul>
+		<li data-toggle="modal" data-target="#myModal"><a id="contactbutton">Contact</a></li>
+		<li><a href="/#portfolio">Portfolio</a></li>
+		<li><a href="/#about">About</a></li>
+	</ul>
+	</div>
+	</div>
+
+	<div id="backimage">
+
+	<div id="content">
+
+	<div id="about">
+	<b class="title">About Me</b>
+	<p> My name is Alexander Filipek, I am a full stack web developer who has knowledge and an interest of all levels of web development.  I graduated from the University of Massachusetts Amherst majoring in Computer Science in 2014.  I fundamentally enjoy programming and have worked on many personal projects because it feels great to create something from an idea and to make it reality.</p>
+
+	<p>I like using Node.js with Express as a web framework.  I prefer NOSQL (particularly MongoDB) to SQL as it is easier to write and use.  I am not a web designer but I do like to make things look nice, I do what I can without having artistic abilities.</p>
+	
+	</div>
+
+	<hr style="border-width:3px">
+
+	<div id="portfolio" style="margin-top:40px">
+		<b class="title">Portfolio</b>
+	<br>
+	<b class="subtitle">Personal Projects</b>
+	<p>I'm currently getting my personal projects ready for display</p>
+	<hr>
+<div style="margin-bottom:30px">
+	<center><b class="project-title">ComMotion</b></center>
+</div>
+
+   <div id="gallery" class="ad-gallery" style="display:inline;float:right;margin-left:70px;margin-top:-70px">
+      <div class="ad-image-wrapper" style="margin-bottom:-20px">
+      </div>
+      <div class="ad-controls">
+      </div>
+      <div class="ad-nav">
+        <div class="ad-thumbs" style="margin-top:5px">
+          <ul class="ad-thumb-list">
+            <li>
+              <a href="images/commotion/locker.png">
+                <img src="images/commotion/resize-locker.png" title="Home Screen" alt="Post a message/See messages of people you are following" class="image0">
+              </a>
+            </li>
+            <li>
+              <a href="images/commotion/create_profile.png">
+                <img src="images/commotion/resize-create_profile.png" title="Create Profile" alt="Fill out this form to fill in your user information" class="image1">
+              </a>
+            </li>
+            <li>
+              <a href="images/commotion/profile.png">
+                <img src="images/commotion/resize-profile.png" title="Profile" alt="See information about yourself" class="image2">
+              </a>
+            </li>
+            <li>
+              <a href="images/commotion/followers.png">
+                <img src="images/commotion/resize-followers.png" title="Your Followers" alt="See who your followers are" class="image3">
+              </a>
+            </li>
+            <li>
+              <a href="images/commotion/create_exercise.png">
+                <img src="images/commotion/resize-create_exercise.png" title="Exercise Creator" alt="Fill out this form to create an exercise" class="image4">
+              </a>
+            </li>
+            <li>
+              <a href="images/commotion/create_workout.png">
+                <img src="images/commotion/resize-create_workout.png" title="Workout Creator" alt="Search for exercises, then drag and drop them over to create a workout" class="image5">
+              </a>
+            </li>
+            <li>
+              <a href="images/commotion/findusers.png">
+                <img src="images/commotion/resize-findusers.png" title="Find Users" alt="You can see the most popular users or search for others on the left" class="image6">
+              </a>
+            </li>
+            <li>
+              <a href="images/commotion/exercise_results.png">
+                <img src="images/commotion/resize-exercise_results.png" title="Exercise Search Results" alt="A list of close match exercises is returned after you search for them" class="image7">
+              </a>
+            </li>
+            <li>
+              <a href="images/commotion/favorites.png">
+                <img src="images/commotion/resize-favorites.png" title="Favorite Exercises/Workouts" alt="Find all of your favorite exercises and workouts in this one location" class="image8">
+              </a>
+            </li>
+            <li>
+              <a href="images/commotion/exercise.png">
+                <img src="images/commotion/resize-exercise.png" title="Exercise Entry" alt="Here is entry information for the Squat exercise" class="image9">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>	
+
+<div class="project-content" style="height:500px">
+	<div class="project-subsection">
+	<div class="project-subtitle">When?</div>
+		<p>Spring 2013
+	</div>
+	<div class="project-subsection">
+		<div class="project-subtitle">What was used?</div>
+		<p>Node.js, Express Framework, PostgreSQL, JQuery Ui, Git/GitHub</p>
+	</div>
+	<div class="project-subsection">
+	<div class="project-subtitle">Project Description</div>
+	<p>ComMotion was a fitness website which relied on user generated data.  Users would be able to create/edit exercises and workouts which other users could then browse through.</p>	
+	</div>	
+	<div class="project-subsection">	
+	<div class="project-subtitle">My Role</div>
+	<ul>
+	<li>Creating the layout and design for most of the pages</li>
+	<li>Connecting the front end to work with the back end</li>
+	<li>Also made a few custom complex SQL queries</li>
+	</ul>
+	</div>	
+</div>	
+
+	<hr>
+<div style="margin-bottom:30px"> 
+	<center><b class="project-title">GeoMusic</b><img src="images/geomusic_icon.png" style="width:45px; height:45px;margin-left:10px"></img></center>
+</div>
+
+	<div id="gallery2" class="ad-gallery" style="width:472px;display:inline;float:left;margin-right:70px;margin-top:-45px">
+      <div class="ad-image-wrapper" style="margin-bottom:25px">
+      </div>
+      <div class="ad-controls">
+      </div>
+      <div class="ad-nav">
+        <div class="ad-thumbs" style="margin-top:5px">
+          <ul class="ad-thumb-list">
+            <li>
+              <a href="images/geomusic/zoomout.png">
+                <img src="images/geomusic/resize4-zoomout.png" class="image0">
+              </a>
+            </li>
+            <li>
+              <a href="images/geomusic/normalzoom.png">
+                <img src="images/geomusic/resize-normalzoom.png" class="image1">
+              </a>
+            </li>
+            <li>
+              <a href="images/geomusic/zoomin.png">
+                <img src="images/geomusic/resize-zoomin.png" class="image2">
+              </a>
+            </li>
+            <li>
+              <a href="images/geomusic/musicplayer.png">
+                <img src="images/geomusic/resize-musicplayer.png" class="image3">
+              </a>
+            </li>
+            <li>
+              <a href="images/geomusic/settings.png">
+                <img src="images/geomusic/resize-settings.png" title="A title for 13.jpg" alt="This is a nice, and incredibly descriptive, description of the image 13.jpg" class="image4">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+<div class="project-content" style="height:625px">
+	<div class="project-subsection">
+	<div class="project-subtitle">When?</div>
+		<p>Spring 2012
+	</div>
+	<div class="project-subsection">
+		<div class="project-subtitle">What was used?</div>
+		<p>Android SDK, Google Maps API, Git/GitHub</p>
+	</div>
+	<div class="project-subsection">
+	<div class="project-subtitle">Project Description</div>
+		<p>The idea behind GeoMusic was to combine people otherwise isolated in listening to their music by allowing them to share what
+		music they are listening to which can then be seen by all users on a Google Map, with additional pin markers showing users with 
+		information such as Song and Artist.</p>
+		
+		<p>Music would come from...</p>
+	</div>
+	<div class="project-subsection">
+		<div class="project-subtitle">My Role</div>		
+		<p>I helped with some of the front end aspects, although my main role was making the map and pin markers display, which meant working with the Google Maps API, 
+	and manipulating the bitmaps of the markers to display correctly.  ...</p>
+	</div>
+
+	</div>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Send me an email or call (508) 247-7419</h4>
+      </div>
+      <div class="modal-body">
+        To: awfilipek@gmail.com
+		<br style="margin-bottom:5px">
+		Subject:
+		<br>
+		<input type="text"></input>
+		<br>
+		Message:
+		<br>
+		<textarea rows="4" cols="28"></textarea>
+		<br>
+		Your email address:
+		<br>
+		<input type="text"></input>
+		<br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id = "sendmessage">Send Message</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+
+
+
+$(function(){
+
+$('#sendmessage').click(function(){
+
+console.log('button clicked');
+
+});
+
+});
+
+$(function(){				
+    $('#sendmessage').click(function(e){
+        e.preventDefault();
+        console.log('User Sign Up Clicked');
+
+		var data = {};
+
+		data.from = 'awfilipek@gmail.com';
+		data.to = 'awfilipek@gmail.com';
+		data.subject = 'Hello';
+		data.text = 'Hello World';
+
+		$.ajax({
+			type: 'POST',
+			data: JSON.stringify(data),
+	        contentType: 'application/json',
+			 url: 'http://localhost:3000/sendmessage',						
+            success: function(data) {
+				console.log(JSON.stringify(data));
+            }
+        });
+
+    });				
+});
+
+</script>
+
+<script>
+$(function() {
+    var galleries = $('.ad-gallery').adGallery();
+});
+</script>
+
+  </body>
+<script src="javascripts/bootstrap.js"></script>
+</html>

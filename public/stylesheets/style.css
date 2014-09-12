@@ -1,0 +1,128 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+p{
+	text-align:justify;		
+}
+
+.title{
+	font-size:20px;	
+	}
+
+#chess{
+	color: #000000;	
+	}
+
+.jumbotron{
+background-image:url('../images/chess_game.jpg');
+background-size:100%;
+height:680px;
+width:1288px;
+margin-top:-50px;
+margin-left:-50px;
+margin-right:-50px;
+clip:rect(0, 0, 100px, 200px);
+padding-top:20px;
+}
+
+#backimage{
+background-image:url('../images/zigzag_background.png');
+background-size:29%;
+margin-left:-50px;
+margin-right:-50px;
+margin-top:-30px;
+margin-bottom:-60px;
+}
+
+#content{
+padding-left: 50px;
+padding-right: 50px;
+padding-top:30px;
+padding-bottom:30px;
+color:#FFFFFF;
+}
+
+#nav > ul >li{
+list-style-type: none;
+/*background-color:#00FF00;*/
+padding: 28px;
+margin: 0px;
+display: inline;
+float: right;
+font-size:27px;
+vertical-align: middel;
+ text-shadow: black 0.1em 0.1em 0.1em;
+}
+a{
+color: #000000;
+text-decoration: none;
+outline: 0;
+font-family: "Times New Roman", Times, serif;
+}
+li:hover{
+/*font-weight:bold;*/
+}
+#contactbutton:hover{
+cursor: pointer;
+}
+a:hover{
+	text-decoration: none;
+}
+
+@font-face{
+	font-family: "My Custom Font";
+	src: url(../fonts/Dawning_of_a_New_Day.ttf) format("truetype");
+}
+
+#signature {
+	display:inline;
+	float: left;
+	font-size:34px;
+	color:#000000;
+   font-family: "My Custom Font", Verdana, Tahoma;
+	
+}
+
+.project-title{
+	font-size:24px;	
+	}
+	
+.project-subtitle{
+	font-size:17px;	
+	font-weight: bold;
+	}
+	
+.project-subsection{
+	margin-bottom:30px;	
+	}
+	
+@media screen and (max-width: 800px) {
+  a{
+   font-size:46px;
+   }
+  p{
+   font-size:32px;
+   width:800px;
+   }
+  .title{
+   font-size:50px;
+  }
+  .subtitle{
+   font-size:42px;
+  }
+  li{
+   padding: 40px;
+  }
+  #content{
+   padding: 25px;
+  }
+  .jumbotron{
+	max-width: 880px;
+	max-height: 540px;
+	background-size: 100%;
+  }
+ 
+
+}
