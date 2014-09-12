@@ -7,10 +7,7 @@
 	  <link rel='stylesheet' href='/stylesheets/jquery.ad-gallery.css' />
 	  <link rel='stylesheet' href='/stylesheets/gallery.css' />
 	<meta name="viewport" content="width=device-width, user-scalabe=no" />
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="javascripts/chessboard.js"></script>
-	<script src="javascripts/animation.js"></script>
-	<script src="javascripts/jquery.ad-gallery.js"></script>
+
   </head>
   <body>
 
@@ -143,7 +140,7 @@
 <div class="project-content" style="height:500px">
 	<div class="project-subsection">
 	<div class="project-subtitle">When?</div>
-		<p>Spring 2013
+		<p>Spring (January-May) 2013
 	</div>
 	<div class="project-subsection">
 		<div class="project-subtitle">What was used?</div>
@@ -198,7 +195,7 @@
             </li>
             <li>
               <a href="images/geomusic/settings.png">
-                <img src="images/geomusic/resize-settings.png" title="A title for 13.jpg" alt="This is a nice, and incredibly descriptive, description of the image 13.jpg" class="image4">
+                <img src="images/geomusic/resize-settings.png" class="image4">
               </a>
             </li>
           </ul>
@@ -208,7 +205,7 @@
 <div class="project-content" style="height:625px">
 	<div class="project-subsection">
 	<div class="project-subtitle">When?</div>
-		<p>Spring 2012
+		<p>Spring (January-May) 2012
 	</div>
 	<div class="project-subsection">
 		<div class="project-subtitle">What was used?</div>
@@ -267,54 +264,11 @@
     </div>
   </div>
 </div>
-
-<script>
-
-
-
-$(function(){
-
-$('#sendmessage').click(function(){
-
-console.log('button clicked');
-
-});
-
-});
-
-$(function(){				
-    $('#sendmessage').click(function(e){
-        e.preventDefault();
-        console.log('User Sign Up Clicked');
-
-		var data = {};
-
-		data.from = 'awfilipek@gmail.com';
-		data.to = 'awfilipek@gmail.com';
-		data.subject = 'Hello';
-		data.text = 'Hello World';
-
-		$.ajax({
-			type: 'POST',
-			data: JSON.stringify(data),
-	        contentType: 'application/json',
-			 url: 'http://localhost:3000/sendmessage',						
-            success: function(data) {
-				console.log(JSON.stringify(data));
-            }
-        });
-
-    });				
-});
-
-</script>
-
-<script>
-$(function() {
-    var galleries = $('.ad-gallery').adGallery();
-});
-</script>
-
   </body>
-<script src="javascripts/bootstrap.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="javascripts/chessboard.js"></script>
+	<script src="javascripts/animation.js"></script>
+	<script src="javascripts/jquery.ad-gallery.js"></script>
+	<script src="javascripts/miscellaneous.js"></script>
+	<script src="javascripts/bootstrap.js"></script>
 </html>
