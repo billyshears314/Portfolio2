@@ -85,6 +85,11 @@ a:hover{
 	
 }
 
+#portfolioText {
+	font-size:64px;
+	color:#FFFFFF;
+}
+
 .project-title{
 	font-size:24px;	
 	}
@@ -116,8 +121,7 @@ a:hover{
    padding: 40px;
   }
   #content{
-   paddi>
-ng: 25px;
+   padding: 25px;
   }
   .jumbotron{
 	max-width: 880px;

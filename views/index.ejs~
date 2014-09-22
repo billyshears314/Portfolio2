@@ -1,80 +1,96 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>  
-	<link rel='stylesheet' href='/stylesheets/bootstrap.css' />
-	  <link rel='stylesheet' href='/stylesheets/style.css' />
-	  <link rel='stylesheet' href='/stylesheets/jquery.ad-gallery.css' />
-	  <link rel='stylesheet' href='/stylesheets/gallery.css' />
-	<meta name="viewport" content="width=device-width, user-scalabe=no" />
-
+	<head>
+		<title><%= title %></title>  
+		<link rel='stylesheet' href='/stylesheets/bootstrap.css' />
+		<link rel='stylesheet' href='/stylesheets/style.css' />
+		</link><link rel='stylesheet' href='/stylesheets/jquery.ad-gallery.css' />
+		</link><link rel='stylesheet' href='/stylesheets/gallery.css' />
+		</link><meta name="viewport" content="width=device-width, user-scalabe=no" />
   </head>
-  <body>
+<body>
 
 	<div class="jumbotron">
 	
-	<div id="chess" style="display:inline;float:left">	
-	
-	
-<h3 style="margin-top:60px">World Championship (1972)</h3>	
-<h3 style="margin-bottom:20px">Spassky</h3>	
-	
-		<div class="board" style="border-style:solid;border-width:2px;height:228px;width:228px;margin-left:75px">
+		<div id="chess" style="display:inline;float:left;position:absolute;top:160px;left:40px">	
 		
-		<% for(var i=0; i<8; i++) {%>
-		<div class="row" style="margin-left:0px">
-
-			<% for (var j=0; j<8; j++) { %>
-
-			<div id=<%=j+i*8%> class="space" style="width:28px;height:28px;display:inline;float:left; background-color:#FFFFFF;margin-right:0px">
-				<div class="piece"><img style="width:25px; height:25px"></img></div>
+			<h3 style="margin-top:60px;font-size:20px">World Championship (1972)</h3>	
+			<h3 style="font-size:20px;margin-top:10px">Game 8</h3>	
+			<h4 style="position:absolute;left:152px;font-weight:bold">Spassky</h4>
+		
+			<div class="board" style="border-style:solid;border-width:2px;height:228px;width:228px;margin-left:75px;margin-top:40px">
+			
+				<% for(var i=0; i<8; i++) {%>
+				
+					<div class="row" style="margin-left:0px">
+	
+						<% for (var j=0; j<8; j++) { %>
+	
+							<div id=<%=j+i*8%> class="space" style="width:28px;height:28px;display:inline;float:left; background-color:#FFFFFF;margin-right:0px">
+								<div class="piece">
+									<img style="width:25px; height:25px"></img>
+								</div>
+							</div>
+	
+						<% } %>
+		
+					</div>
+					
+				<% } %>
+		
 			</div>
-
-			<% } %>
-	
+		
+			<h4 style="position:absolute;left:157px;top:380px;font-weight:bold">Fischer</h4>
+		
 		</div>
-	<% } %>
-	
-	</div>
-	
-	<h3 style="margin-top:20px">Fischer</h3>
-	
-	</div>
-	<span id="signature" style="float:left;display:inline;margin-left:100px"><b>Alexander Filipek</b></span>
-	<div id="nav">
-	<ul>
-		<li data-toggle="modal" data-target="#myModal"><a id="contactbutton">Contact</a></li>
-		<li><a href="/#portfolio">Portfolio</a></li>
-		<li><a href="/#about">About</a></li>
-	</ul>
-	</div>
+		
+		<div id="signature"><b>Alexander Filipek</b></div>
+
+		<div id="nav">
+			<ul>
+				<!--<li data-toggle="modal" data-target="#myModal"><a id="contactbutton">Contact</a></li>-->
+				<li><a href="/#portfolio">Portfolio</a></li>
+				<li><a href="/#about">About</a></li>
+			</ul>
+		</div>
+		
+		<div id="contactInformation" style="position:absolute;top:12px;left:900px">
+			<span style="margin-right:10px"><strong>Phone:</strong> (508) 247-7419</span>
+			<span><strong>E-mail:</strong> awfilipek@gmail.com</span>
+		</div>
+		
+	<!--End of jumbotron-->
 	</div>
 
 	<div id="backimage">
 
-	<div id="content">
+		<div id="content">
 
-	<div id="about">
-	<b class="title">About Me</b>
-	<p> My name is Alexander Filipek, I am a full stack web developer who has knowledge and an interest of all levels of web development.  I graduated from the University of Massachusetts Amherst majoring in Computer Science in 2014.  I fundamentally enjoy programming and have worked on many personal projects because it feels great to create something from an idea and to make it reality.</p>
+			<div id="about">
+				<b class="title">About Me</b>
+				<br>
+				<div class="col-md-6">
+					<div style="margin-top:10px;margin-bottom:70px">
+						<img src="images/profile.jpg" width="114" height="150" style="position:relative;float:left;margin-right:20px"></img>
+		
+						<p>My name is Alexander Filipek, I am a full stack web developer who has knowledge and an interest of all levels of web development.  I graduated from the University of Massachusetts Amherst majoring in Computer Science in 2014.  I fundamentally enjoy programming and have worked on many personal projects because it feels great to create something from an idea and to make it reality.</p>
+						<p>I like using Node.js with Express as a web framework.  I prefer NOSQL (particularly MongoDB) to SQL as it is easier to write and use.  I am not a web designer but I do like to make things look nice, I do what I can without having artistic abilities.</p>
+					</div>
 
-	<p>I like using Node.js with Express as a web framework.  I prefer NOSQL (particularly MongoDB) to SQL as it is easier to write and use.  I am not a web designer but I do like to make things look nice, I do what I can without having artistic abilities.</p>
-	
-	</div>
+			</div>
+				<div class="col-md-6">
+				Skills				
+				</div>
+			<hr style="border-width:3px">
 
-	<hr style="border-width:3px">
+			<div id="portfolio" style="margin-top:40px">
+				<center><span id="portfolioText">Portfolio</span></center>
+				<hr>
+			<div style="margin-bottom:30px">
+				<center><b class="project-title">ComMotion</b></center>
+			</div>
 
-	<div id="portfolio" style="margin-top:40px">
-		<b class="title">Portfolio</b>
-	<br>
-	<b class="subtitle">Personal Projects</b>
-	<p>I'm currently getting my personal projects ready for display</p>
-	<hr>
-<div style="margin-bottom:30px">
-	<center><b class="project-title">ComMotion</b></center>
-</div>
-
-   <div id="gallery" class="ad-gallery" style="display:inline;float:right;margin-left:70px;margin-top:-70px">
+   		<div id="gallery" class="ad-gallery" style="display:inline;float:right;margin-left:70px;margin-top:-70px">
       <div class="ad-image-wrapper" style="margin-bottom:-20px">
       </div>
       <div class="ad-controls">
@@ -135,35 +151,36 @@
           </ul>
         </div>
       </div>
+    <!--end of gallery-->
     </div>	
 
-<div class="project-content" style="height:500px">
-	<div class="project-subsection">
-	<div class="project-subtitle">When?</div>
-		<p>Spring (January-May) 2013
-	</div>
-	<div class="project-subsection">
-		<div class="project-subtitle">What was used?</div>
-		<p>Node.js, Express Framework, PostgreSQL, JQuery Ui, Git/GitHub</p>
-	</div>
-	<div class="project-subsection">
-	<div class="project-subtitle">Project Description</div>
-	<p>ComMotion was a fitness website which relied on user generated data.  Users would be able to create/edit exercises and workouts which other users could then browse through.</p>	
+	<div class="project-content" style="height:500px">
+		<div class="project-subsection">
+		<div class="project-subtitle">When?</div>
+			<p>Spring (January-May) 2014
+		</div>
+		<div class="project-subsection">
+			<div class="project-subtitle">What was used?</div>
+			<p>Node.js, Express Framework, PostgreSQL, JQuery Ui, Git/GitHub</p>
+		</div>
+		<div class="project-subsection">
+		<div class="project-subtitle">Project Description</div>
+		<p>ComMotion was a fitness website which relied on user generated data.  Users would be able to create/edit exercises and workouts which other users could then browse through.</p>	
+		</div>	
+		<div class="project-subsection">	
+		<div class="project-subtitle">My Role</div>
+		<ul>
+		<li>Creating the layout and design for most of the pages</li>
+		<li>Connecting the front end to work with the back end</li>
+		<li>Also made a few custom complex SQL queries</li>
+		</ul>
+		</div>	
 	</div>	
-	<div class="project-subsection">	
-	<div class="project-subtitle">My Role</div>
-	<ul>
-	<li>Creating the layout and design for most of the pages</li>
-	<li>Connecting the front end to work with the back end</li>
-	<li>Also made a few custom complex SQL queries</li>
-	</ul>
-	</div>	
-</div>	
-
-	<hr>
-<div style="margin-bottom:30px"> 
-	<center><b class="project-title">GeoMusic</b><img src="images/geomusic_icon.png" style="width:45px; height:45px;margin-left:10px"></img></center>
-</div>
+	
+		<hr>
+	<div style="margin-bottom:30px"> 
+		<center><b class="project-title">GeoMusic</b><img src="images/geomusic_icon.png" style="width:45px; height:45px;margin-left:10px"></img></center>
+	</div>
 
 	<div id="gallery2" class="ad-gallery" style="width:472px;display:inline;float:left;margin-right:70px;margin-top:-45px">
       <div class="ad-image-wrapper" style="margin-bottom:25px">
@@ -201,36 +218,41 @@
           </ul>
         </div>
       </div>
+    <!--End of Gallery2-->
     </div>
-<div class="project-content" style="height:625px">
-	<div class="project-subsection">
-	<div class="project-subtitle">When?</div>
-		<p>Spring (January-May) 2012
+    
+		<div class="project-content" style="height:625px">
+			<div class="project-subsection">
+				<div class="project-subtitle">When?</div>
+					<p>Spring (January-May) 2013
+				</div>
+				<div class="project-subsection">
+					<div class="project-subtitle">What was used?</div>
+					<p>Android SDK, Google Maps API, Git/GitHub</p>
+				</div>
+				<div class="project-subsection">
+					<div class="project-subtitle">Project Description</div>
+					<p>The idea behind GeoMusic was to combine people otherwise isolated in listening to their music by allowing them to share what
+					music they are listening to which can then be seen by all users on a Google Map, with additional pin markers showing users with 
+					information such as Song and Artist.</p>
+			
+					<p>Music would come from...</p>
+				</div>
+				<div class="project-subsection">
+					<div class="project-subtitle">My Role</div>		
+					<ul>
+						<li>Front end for login/signup and settings</li>
+						<li>Adding Google Maps functionality</li> 
+						<li>Adjusting bitmaps of pins on map to look and behave pixel perfectly</li>
+					</ul>
+				</div>
+	
+			</div>
+		<!--End of Portfolio-->
+		</div>
+	<!--End of Content-->
 	</div>
-	<div class="project-subsection">
-		<div class="project-subtitle">What was used?</div>
-		<p>Android SDK, Google Maps API, Git/GitHub</p>
-	</div>
-	<div class="project-subsection">
-	<div class="project-subtitle">Project Description</div>
-		<p>The idea behind GeoMusic was to combine people otherwise isolated in listening to their music by allowing them to share what
-		music they are listening to which can then be seen by all users on a Google Map, with additional pin markers showing users with 
-		information such as Song and Artist.</p>
-		
-		<p>Music would come from...</p>
-	</div>
-	<div class="project-subsection">
-		<div class="project-subtitle">My Role</div>		
-		<p>I helped with some of the front end aspects, although my main role was making the map and pin markers display, which meant working with the Google Maps API, 
-	and manipulating the bitmaps of the markers to display correctly.  ...</p>
-	</div>
-
-	</div>
-
-</div>
-
-</div>
-
+<!--End of backimage-->
 </div>
 
 <!-- Modal -->
