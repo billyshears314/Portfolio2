@@ -86,7 +86,7 @@ a:hover{
 }
 
 #portfolioText {
-	font-size:64px;
+	font-size:54px;
 	color:#FFFFFF;
 }
 

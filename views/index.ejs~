@@ -15,7 +15,7 @@
 		<div id="chess" style="display:inline;float:left;position:absolute;top:160px;left:40px">	
 		
 			<h3 style="margin-top:60px;font-size:20px">World Championship (1972)</h3>	
-			<h3 style="font-size:20px;margin-top:10px">Game 8</h3>	
+			<h3 style="font-size:18px;margin-top:10px">Game 8</h3>	
 			<h4 style="position:absolute;left:152px;font-weight:bold">Spassky</h4>
 		
 			<div class="board" style="border-style:solid;border-width:2px;height:228px;width:228px;margin-left:75px;margin-top:40px">
@@ -45,7 +45,9 @@
 		</div>
 		
 		<div id="signature"><b>Alexander Filipek</b></div>
-
+		
+		<div id="textAfterSignature" style="position:absolute;top:75px;left:40px;color:#000000;font-size:16px;">a Node.js full stack web developer living outside of Boston</div>
+				
 		<div id="nav">
 			<ul>
 				<!--<li data-toggle="modal" data-target="#myModal"><a id="contactbutton">Contact</a></li>-->
@@ -54,9 +56,9 @@
 			</ul>
 		</div>
 		
-		<div id="contactInformation" style="position:absolute;top:12px;left:900px">
-			<span style="margin-right:10px"><strong>Phone:</strong> (508) 247-7419</span>
-			<span><strong>E-mail:</strong> awfilipek@gmail.com</span>
+		<div id="contactInformation" style="position:absolute;top:12px;left:880px">
+			<span style="margin-right:10px;font-size:16px"><strong>Phone:</strong> (508) 247-7419</span>
+			<span style="font-size:16px"><strong>E-mail:</strong> awfilipek@gmail.com</span>
 		</div>
 		
 	<!--End of jumbotron-->
@@ -66,23 +68,30 @@
 
 		<div id="content">
 
-			<div id="about">
-				<b class="title">About Me</b>
-				<br>
-				<div class="col-md-6">
-					<div style="margin-top:10px;margin-bottom:70px">
-						<img src="images/profile.jpg" width="114" height="150" style="position:relative;float:left;margin-right:20px"></img>
-		
-						<p>My name is Alexander Filipek, I am a full stack web developer who has knowledge and an interest of all levels of web development.  I graduated from the University of Massachusetts Amherst majoring in Computer Science in 2014.  I fundamentally enjoy programming and have worked on many personal projects because it feels great to create something from an idea and to make it reality.</p>
-						<p>I like using Node.js with Express as a web framework.  I prefer NOSQL (particularly MongoDB) to SQL as it is easier to write and use.  I am not a web designer but I do like to make things look nice, I do what I can without having artistic abilities.</p>
+			<div id="about" style="margin-bottom:170px">
+				<div class="col-md-12">
+					
+					<div class="col-md-6">
+					
+						<img src="images/profile.jpg" width="114" height="150" style="position:relative;float:left;margin-right:20px;margin-top:13px"></img>
+										
+						<h4><strong>Bio</strong></h4>						
+						<p>My name is Alexander Filipek, a full stack Node.js web developer in the Greater Boston Area.  I graduated from the University of Massachusetts Amherst majoring in Computer Science in 2014.</p>
+						<p>I enjoy the craft of programming and working on new and challenging projects.</p>
 					</div>
+					<div class="col-md-6" style="padding-left:20px">
+					<h4><strong>Skills</strong></h4>
+						<ul>
+							<li style="margin-bottom:5px"><strong>Proficient:</strong> Java, HTML5, CSS3, Javascript, JQuery, MongoDB, and Git</li>	
+							<li><strong>Familiar:</strong> PHP, Ruby, Angular.js, C, C++, Python, and SQL</li>					
+						</ul>
+					</div>
+					
+					</div>
+					
+					<hr style="border-width:3px">
 
-			</div>
-				<div class="col-md-6">
-				Skills				
 				</div>
-			<hr style="border-width:3px">
-
 			<div id="portfolio" style="margin-top:40px">
 				<center><span id="portfolioText">Portfolio</span></center>
 				<hr>
