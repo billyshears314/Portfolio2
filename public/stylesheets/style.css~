@@ -44,6 +44,12 @@ padding-bottom:30px;
 color:#FFFFFF;
 }
 
+#nav{
+position:absolute;
+top:10px;	
+left:910px;	
+}
+
 #nav > ul >li{
 list-style-type: none;
 /*background-color:#00FF00;*/
