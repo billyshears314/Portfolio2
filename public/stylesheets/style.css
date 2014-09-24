@@ -78,13 +78,20 @@ a:hover{
 
 #signature {
 	display:inline;
-	float: left;
 	font-size:34px;
 	color:#000000;
    font-family: "My Custom Font", Verdana, Tahoma;
 	
 }
 
+#textAfterSignature {
+ position:absolute;
+ top:75px;
+ left:440px;
+ color:#000000;
+ font-size:16px;
+}
+ 
 #portfolioText {
 	font-size:54px;
 	color:#FFFFFF;
