@@ -63,9 +63,8 @@
 		
 	<!--End of jumbotron-->
 	</div>
-
 	<div id="backimage">
-
+		<hr style="border-width:15px;background-color:#000000;border-color:#000000">
 		<div id="content">
 
 			<div id="about" style="margin-bottom:220px">
@@ -92,15 +91,15 @@
 					<hr style="border-width:3px">
 
 				</div>
-			<div id="portfolio" style="margin-top:160px">
-				<center><span id="portfolioText">Portfolio</span></center>
-				<hr>
-			<div style="margin-bottom:30px">
-				<center><b class="project-title">ComMotion</b></center>
-			</div>
+				<div id="portfolio" style="margin-top:160px">
+					<center><span id="portfolioText">Portfolio</span></center>
+					<hr>
+					<div style="margin-bottom:30px">
+						<center><b class="project-title">ComMotion</b></center>
+					</div>
 
-   		<div id="gallery" class="ad-gallery" style="display:inline;float:right;margin-left:70px;margin-top:-70px">
-      <div class="ad-image-wrapper" style="margin-bottom:-20px">
+   					<div id="gallery" class="ad-gallery" style="display:inline;float:right;margin-left:70px;margin-top:-70px">
+     						 <div class="ad-image-wrapper" style="margin-bottom:-20px">
       </div>
       <div class="ad-controls">
       </div>
@@ -311,7 +310,7 @@
 		</div>
 		<div class="project-subsection">
 			<div class="project-subtitle">Project Description</div>
-			<p>This is a program I worked on alone in the summer at the request of a friend of mine.  
+			<p>This is a program I worked on alone at the request of a friend of mine.  
 			The idea is that you can input recipes and then search through them either by name or by ingredients.  
 			Then you can see the recipe for the meal you select in a standard format.</p>	
 		</div>	
