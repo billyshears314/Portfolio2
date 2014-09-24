@@ -12,7 +12,7 @@
 
 	<div class="jumbotron">
 	
-		<div id="chess" style="display:inline;float:left;position:absolute;top:50px;left:40px">	
+		<div id="chess" style="display:inline;float:left;position:absolute;top:40px;left:40px">	
 		
 			<h3 style="margin-top:60px;font-size:18px">World Championship (1972)</h3>	
 			<h3 style="font-size:18px;margin-top:10px">Game 8</h3>	
@@ -68,12 +68,12 @@
 
 		<div id="content">
 
-			<div id="about" style="margin-bottom:170px">
+			<div id="about" style="margin-bottom:220px">
 				<div class="col-md-12">
 					
 					<div class="col-md-6">
 					
-						<img src="images/profile.jpg" width="114" height="150" style="position:relative;float:left;margin-right:20px;margin-top:13px"></img>
+						<img src="images/profile.jpg" width="114" height="150" style="border-radius:10px;position:relative;float:left;margin-right:20px;margin-top:13px"></img>
 										
 						<h4><strong>Bio</strong></h4>						
 						<p>My name is Alexander Filipek, a full stack Node.js web developer in the Greater Boston Area.  I graduated from the University of Massachusetts Amherst majoring in Computer Science in 2014.</p>
@@ -92,7 +92,7 @@
 					<hr style="border-width:3px">
 
 				</div>
-			<div id="portfolio" style="margin-top:40px">
+			<div id="portfolio" style="margin-top:160px">
 				<center><span id="portfolioText">Portfolio</span></center>
 				<hr>
 			<div style="margin-bottom:30px">
@@ -244,8 +244,6 @@
 					<p>The idea behind GeoMusic was to combine people otherwise isolated in listening to their music by allowing them to share what
 					music they are listening to which can then be seen by all users on a Google Map, with additional pin markers showing users with 
 					information such as Song and Artist.</p>
-			
-					<p>Music would come from...</p>
 				</div>
 				<div class="project-subsection">
 					<div class="project-subtitle">My Role</div>		
@@ -257,8 +255,77 @@
 				</div>
 	
 			</div>
-		<!--End of Portfolio-->
+
+			<hr>
+			<div style="margin-bottom:30px">
+				<center><b class="project-title">Recipe Program</b></center>
+			</div>
+
+   		<div id="gallery" class="ad-gallery" style="display:inline;float:right;margin-left:70px;margin-top:-50px">
+      <div class="ad-image-wrapper" style="margin-bottom:-20px">
+      </div>
+      <div class="ad-controls" style="margin-top:13px">
+      </div>
+      <div class="ad-nav">
+        <div class="ad-thumbs" style="margin-top:5px">
+          <ul class="ad-thumb-list">
+            <li>
+              <a href="images/recipe/add_recipe.png">
+                <img src="images/recipe/resize-add_recipe.png" title="" alt="" class="image0">
+              </a>
+            </li>
+            <li>
+              <a href="images/recipe/meal_list.png">
+                <img src="images/recipe/resize-meal_list.png" title="" alt="" class="image1">
+              </a>
+            </li>
+            <li>
+              <a href="images/recipe/main_screen.png">
+                <img src="images/recipe/resize-main_screen.png" title="" alt="" class="image2">
+              </a>
+            </li>
+            <li>
+              <a href="images/recipe/ingredient_search.png">
+                <img src="images/recipe/resize-ingredient_search.png" title="" alt="" class="image3">
+              </a>
+            </li>
+            <li>
+              <a href="images/recipe/individual_recipe.png">
+                <img src="images/recipe/resize-individual_recipe.png" title="" alt="" class="image4">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    <!--end of gallery-->
+    </div>	
+
+	<div class="project-content" style="height:500px">
+		<div class="project-subsection">
+			<div class="project-subtitle">When?</div>
+				<p>June-July 2012
+			</div>
+		<div class="project-subsection">
+			<div class="project-subtitle">What was used?</div>
+			<p>Java</p>
 		</div>
+		<div class="project-subsection">
+			<div class="project-subtitle">Project Description</div>
+			<p>This is a program I worked on alone in the summer at the request of a friend of mine.  
+			The idea is that you can input recipes and then search through them either by name or by ingredients.  
+			Then you can see the recipe for the meal you select in a standard format.</p>	
+		</div>	
+		<div class="project-subsection">	
+			<div class="project-subtitle">My Role (everything)</div>
+			<ul>
+				<li>Creating a system to create, read, update, and delete recipes saved to text files</li>
+				<li>Designing layout and functionality</li>
+				<li>Testing and Debugging</li>
+			</ul>
+		</div>	
+	</div>		
+			<!--End of Portfolio-->
+		</div>		
 	<!--End of Content-->
 	</div>
 <!--End of backimage-->
