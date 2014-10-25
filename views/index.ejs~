@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title><%= title %></title>  
+		<title>Alex Filipek</title>  
 		<link rel='stylesheet' href='/stylesheets/bootstrap.css' />
 		<link rel='stylesheet' href='/stylesheets/style.css' />
 		</link><link rel='stylesheet' href='/stylesheets/jquery.ad-gallery.css' />
@@ -12,8 +12,50 @@
   </head>
 <body>
 
-	<div class="jumbotron">
+	<!--<div class="jumbotron">-->
 	
+	
+	<div style="font-size:40px">Hello</div>
+	
+<nav class="navbar navbar-default" role="navigation" style="margin-top:0px;background-color:">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <div class="navbar-header">
+    
+   	<div id="contactInformation" class="navbar-brand">
+			<span style="margin-right:10px;font-size:16px"><strong>Phone:</strong> (508) 247-7419</span>
+			<span style="font-size:16px"><strong>E-mail:</strong> awfilipek@gmail.com</span>
+		</div>
+	
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+	
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#Commotion">Commotion</a></li>
+            <li><a href="#Geomusic">Geomusic</a></li>
+            <li><a href="#RecipeProgram">Recipe Program</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+    
+  </div><!-- /.container-fluid -->
+</nav>
+
+
+	<!--
 		<div id="chess" style="display:inline;float:left;position:absolute;top:40px;left:40px">	
 		
 			<h3 style="margin-top:60px;font-size:18px">World Championship (1972)</h3>	
@@ -45,63 +87,96 @@
 			<h4 style="position:absolute;left:157px;top:380px;font-weight:bold">Fischer</h4>
 		
 		</div>
-		
-		<center><div id="signature"><b>Alexander Filipek</b></div></center>
-		
-		<div id="textAfterSignature">a Node.js full stack web developer living outside of Boston</div>
-				
+-->
+			
+		<!--	
 		<div id="nav">
 			<ul>
-				<!--<li data-toggle="modal" data-target="#myModal"><a id="contactbutton">Contact</a></li>-->
+				<li data-toggle="modal" data-target="#myModal"><a id="contactbutton">Contact</a></li>
 				<li><a href="/#portfolio">Portfolio</a></li>
 				<li><a href="/#about">About</a></li>
 			</ul>
 		</div>
+		-->				
+
 		
-		<div id="contactInformation" style="position:absolute;top:12px;left:880px">
-			<span style="margin-right:10px;font-size:16px"><strong>Phone:</strong> (508) 247-7419</span>
-			<span style="font-size:16px"><strong>E-mail:</strong> awfilipek@gmail.com</span>
-		</div>
-		
-	<!--End of jumbotron-->
-	</div>
+	<!--End of jumbotron
+	</div>-->
+
 	<div id="backimage">
 		<hr style="border-width:10px;background-color:#000000;border-color:#000000">
 		<div id="content">
 
-			<div id="about" style="margin-bottom:220px">
+			<div id="about">
 				<div class="col-md-12">
 					
-					<div class="col-md-6">
+					<div class="col-md-6 col-sm-12">
 					
 						<img src="images/profile.jpg" width="114" height="150" style="border-radius:10px;position:relative;float:left;margin-right:20px;margin-top:13px"></img>
 										
 						<h4><strong>Bio</strong></h4>						
-						<p>My name is Alexander Filipek, a full stack Node.js web developer in the Greater Boston Area.  I graduated from the University of Massachusetts Amherst majoring in Computer Science in 2014.</p>
-						<p>I enjoy the craft of programming and working on new and challenging projects.</p>
+						<p>My name is Alexander Filipek, a full stack Node.js web developer in the Boston Area, also looking to get into the Ruby on Rails game.  I graduated from the University of Massachusetts Amherst majoring in Computer Science in 2014.</p>
+						<p>I enjoy the craft of programming and working on new and challenging projects.  I love to learn more about all aspects of web development and to push myself to create innovative products.</p>
 					</div>
-					<div class="col-md-6" style="padding-left:20px">
-					<h4><strong>Skills</strong></h4>
+					<div class="col-md-6 col-sm-12" style="padding-left:20px">
+					<h5><strong>Languages and Tools</strong></h5>
 						<ul>
-							<li style="margin-bottom:5px"><strong>Proficient:</strong> Java, HTML5, CSS3, Javascript, JQuery, MongoDB, and Git</li>	
-							<li><strong>Familiar:</strong> PHP, Ruby, Angular.js, C, C++, Python, and SQL</li>					
+							<li style="margin-bottom:5px"><i>Proficient:</i> Node.js, HTML5, CSS3, Javascript, JQuery, MongoDB, and Git</li>	
+							<li><i>Some Experience:</i> Ruby on Rails, Ruby, Angular.js, Python, and SQL</li>				
 						</ul>
-					</div>
+					<h5><strong>Operating Systems:</strong></h5>
+					<ul>
+						<li>Linux, Windows</li>
+					</ul>
 					
 					</div>
+					
 					
 					<hr style="border-width:3px">
 
 				</div>
-				<div id="portfolio" style="margin-top:160px">
+				
+				<div id="portfolio">
 					<center><span id="portfolioText">Portfolio</span></center>
 					<hr>
-					<div style="margin-bottom:30px">
+					
+				<div id="Commotion" class="col-md-12 col-sm-12">
+					<div>
 						<center><b class="project-title">ComMotion</b></center>
 					</div>
 
-   					<div id="gallery" class="ad-gallery" style="display:inline;float:right;margin-left:70px;margin-top:-70px">
+	<div class="project-content col-md-6 col-sm-12">
+	
+	<!--
+		<div class="project-subsection">
+		<div class="project-subtitle">When?</div>
+			<p>Spring (January-May) 2014
+		</div>
+		<div class="project-subsection">
+			<div class="project-subtitle">What was used?</div>
+			<p>Node.js, Express Framework, PostgreSQL, JQuery Ui, Git/GitHub</p>
+		</div>
+		<div class="project-subsection">
+		<div class="project-subtitle">Project Description</div>
+		<p>ComMotion was a fitness website which relied on user generated data.  Users would be able to create/edit exercises and workouts which other users could then browse through.</p>	
+		</div>	
+		<div class="project-subsection">	
+		<div class="project-subtitle">My Role</div>
+		<ul>
+			<li>Creating the layout and design for most of the pages</li>
+			<li>Connecting the front end to work with the back end</li>
+			<li>Also made a few custom complex SQL queries</li>
+		</ul>
+		</div>
+		<a href="https://github.com/r3d3y3/ComMotion" style="color:#FFFFFF;font-size:16px">https://github.com/r3d3y3/ComMotion</a>	
+-->
+	</div>	
+
+   					<div id="gallery" class="ad-gallery col-md-6 col-sm-12">
+   			
+<!--   				
      						 <div class="ad-image-wrapper" style="margin-bottom:-20px">
+     						 
       </div>
       <div class="ad-controls">
       </div>
@@ -161,38 +236,23 @@
           </ul>
         </div>
       </div>
+      -->
     <!--end of gallery-->
     </div>	
+    
 
-	<div class="project-content" style="height:500px">
-		<div class="project-subsection">
-		<div class="project-subtitle">When?</div>
-			<p>Spring (January-May) 2014
+		<!--End of ComMotion-->
 		</div>
-		<div class="project-subsection">
-			<div class="project-subtitle">What was used?</div>
-			<p>Node.js, Express Framework, PostgreSQL, JQuery Ui, Git/GitHub</p>
-		</div>
-		<div class="project-subsection">
-		<div class="project-subtitle">Project Description</div>
-		<p>ComMotion was a fitness website which relied on user generated data.  Users would be able to create/edit exercises and workouts which other users could then browse through.</p>	
-		</div>	
-		<div class="project-subsection">	
-		<div class="project-subtitle">My Role</div>
-		<ul>
-		<li>Creating the layout and design for most of the pages</li>
-		<li>Connecting the front end to work with the back end</li>
-		<li>Also made a few custom complex SQL queries</li>
-		</ul>
-		</div>	
-	</div>	
 	
 		<hr>
-	<div style="margin-bottom:30px"> 
+		
+	<div id="GeoMusic">		
+		
+	<div> 
 		<center><b class="project-title">GeoMusic</b><img src="images/geomusic_icon.png" style="width:45px; height:45px;margin-left:10px"></img></center>
 	</div>
 
-	<div id="gallery2" class="ad-gallery" style="width:472px;display:inline;float:left;margin-right:70px;margin-top:-45px">
+	<div id="gallery2" class="ad-gallery col-md-6 col-sm-12" style="display:inline;float:left;">
       <div class="ad-image-wrapper" style="margin-bottom:25px">
       </div>
       <div class="ad-controls">
@@ -231,14 +291,14 @@
     <!--End of Gallery2-->
     </div>
     
-		<div class="project-content" style="height:625px">
+		<div class="project-content col-md-6 col-sm-12">
 			<div class="project-subsection">
 				<div class="project-subtitle">When?</div>
 					<p>Spring (January-May) 2013
 				</div>
 				<div class="project-subsection">
 					<div class="project-subtitle">What was used?</div>
-					<p>Android SDK, Google Maps API, Git/GitHub</p>
+					<p>Android SDK, Google Maps API</p>
 				</div>
 				<div class="project-subsection">
 					<div class="project-subtitle">Project Description</div>
@@ -256,13 +316,19 @@
 				</div>
 	
 			</div>
+			
+			<!--End of Geomusic-->
+			</div>
 
 			<hr>
-			<div style="margin-bottom:30px">
+
+			<div id="RecipeProgram">			
+			
+			<div>
 				<center><b class="project-title">Recipe Program</b></center>
 			</div>
 
-   		<div id="gallery" class="ad-gallery" style="display:inline;float:right;margin-left:70px;margin-top:-50px">
+   		<div id="gallery" class="ad-gallery col-lg-6 col-md-6 col-sm-12" style="display:inline;float:right;">
       <div class="ad-image-wrapper" style="margin-bottom:-20px">
       </div>
       <div class="ad-controls" style="margin-top:13px">
@@ -301,7 +367,7 @@
     <!--end of gallery-->
     </div>	
 
-	<div class="project-content" style="height:500px">
+	<div class="project-content col-lg-6 col-md-6 col-sm-12">
 		<div class="project-subsection">
 			<div class="project-subtitle">When?</div>
 				<p>June-July 2012
@@ -323,8 +389,12 @@
 				<li>Designing layout and functionality</li>
 				<li>Testing and Debugging</li>
 			</ul>
-		</div>	
-	</div>		
+		</div>
+			
+	</div>
+	
+		<!--End of Recipe Program-->
+		</div>		
 			<!--End of Portfolio-->
 		</div>		
 	<!--End of Content-->

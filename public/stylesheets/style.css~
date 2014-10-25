@@ -1,5 +1,4 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -14,24 +13,12 @@ p{
 #chess{
 	color: #000000;	
 	}
-	
-#custom-jumbotron{
-background-image:url('../images/chess_game.jpg');
-background-size:100%;
-height:680px;
-width:100%;
-margin-top:-50px;
-margin-left:-50px;
-margin-right:-50px;
-clip:rect(0, 0, 100px, 200px);
-padding-top:20px;
-}
 
 .jumbotron{
-background-image:url('../images/chess_game.jpg');
+#background-image:url('../images/chess_game.jpg');
 background-size:100%;
-height:680px;
-width:1288px;
+height:200px;
+#width:1288px;
 margin-top:-50px;
 margin-left:-50px;
 margin-right:-50px;
@@ -40,12 +27,11 @@ padding-top:20px;
 }
 
 #backimage{
-background-image:url('../images/zigzag_background.png');
+#background-image:url('../images/zigzag_background.png');
 background-size:29%;
 margin-left:-50px;
 margin-right:-50px;
 margin-top:-30px;
-margin-bottom:-60px;
 }
 
 #content{
@@ -59,7 +45,7 @@ color:#FFFFFF;
 #nav{
 position:absolute;
 top:15px;	
-left:910px;	
+#left:910px;	
 }
 
 #nav > ul >li{
@@ -85,6 +71,8 @@ li:hover{
 #contactbutton:hover{
 cursor: pointer;
 }
+#contactInformation{	
+}
 a:hover{
 	text-decoration: none;
 }
@@ -95,17 +83,15 @@ a:hover{
 }
 
 #signature {
-	display:inline;
 	font-size:34px;
 	color:#000000;
    font-family: "My Custom Font", Verdana, Tahoma;
-	
 }
 
 #textAfterSignature {
- position:absolute;
- top:75px;
- left:440px;
+ #position:absolute;
+ #top:75px;
+ #left:440px;
  color:#000000;
  font-size:16px;
 }
@@ -125,9 +111,9 @@ a:hover{
 	}
 	
 .project-subsection{
-	margin-bottom:30px;	
+	#margin-bottom:30px;	
 	}
-	
+	/*
 @media screen and (max-width: 800px) {
   a{
    font-size:46px;
@@ -155,3 +141,4 @@ a:hover{
   }
 
 }
+*/
