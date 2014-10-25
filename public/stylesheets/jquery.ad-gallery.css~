@@ -8,7 +8,7 @@
  * Demo and documentation: http://coffeescripter.com/code/ad-gallery/
  */
 .ad-gallery {
-  width: 600px;
+  width: 580px;
 
 }
 .ad-gallery, .ad-gallery * {
@@ -138,7 +138,7 @@
       left: -20px;
       width: 13px;
       display: block;
-      background: url(left-arrow.png) 0px 22px no-repeat;
+      background: url(ad_scroll_back.png) 0px 22px no-repeat;
     }
     .ad-gallery .ad-forward {
       cursor: pointer;

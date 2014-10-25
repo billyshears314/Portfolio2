@@ -1,5 +1,7 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image:url('../images/zigzag_background.png');
+  background-size:29%;
 }
 
 p{
@@ -27,10 +29,8 @@ padding-top:20px;
 }
 
 #backimage{
-#background-image:url('../images/zigzag_background.png');
+background-image:url('../images/zigzag_background.png');
 background-size:29%;
-margin-left:-50px;
-margin-right:-50px;
 margin-top:-30px;
 }
 
@@ -38,8 +38,7 @@ margin-top:-30px;
 padding-left: 50px;
 padding-right: 50px;
 padding-top:30px;
-padding-bottom:30px;
-color:#FFFFFF;
+color:#0000FF;
 }
 
 #nav{
@@ -71,8 +70,6 @@ li:hover{
 #contactbutton:hover{
 cursor: pointer;
 }
-#contactInformation{	
-}
 a:hover{
 	text-decoration: none;
 }
@@ -84,7 +81,8 @@ a:hover{
 
 #signature {
 	font-size:34px;
-	color:#000000;
+	color:#FFFFFF;
+	margin-left:10px;
    font-family: "My Custom Font", Verdana, Tahoma;
 }
 
@@ -92,7 +90,7 @@ a:hover{
  #position:absolute;
  #top:75px;
  #left:440px;
- color:#000000;
+ color:#FFFFFF;
  font-size:16px;
 }
  
@@ -111,8 +109,29 @@ a:hover{
 	}
 	
 .project-subsection{
-	#margin-bottom:30px;	
+	margin-bottom:30px;	
 	}
+	
+#Commotion{
+	margin-bottom:20px;		
+}
+#GeoMusic{
+	margin-bottom:20px; 			
+}
+	
+@media screen and (max-width: 992px){
+	
+	#textAfterSignature{
+		display: block;	
+		margin-left:10px;
+	}	
+	#content{
+		padding-left:20px;	
+		padding-right:20px;
+	}
+	
+}	
+	
 	/*
 @media screen and (max-width: 800px) {
   a{

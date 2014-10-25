@@ -15,11 +15,12 @@
 	<!--<div class="jumbotron">-->
 	
 	
-	<div style="font-size:40px">Hello</div>
+		<span id="signature"><b>Alexander Filipek</b></span>
+		<span id="textAfterSignature">a Node.js full stack web developer living outside of Boston</span>		
+	
 	
 <nav class="navbar navbar-default" role="navigation" style="margin-top:0px;background-color:">
   <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
 
     <div class="navbar-header">
     
@@ -44,7 +45,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
           <ul class="dropdown-menu" role="menu">
             <li><a href="#Commotion">Commotion</a></li>
-            <li><a href="#Geomusic">Geomusic</a></li>
+            <li><a href="#GeoMusic">Geomusic</a></li>
             <li><a href="#RecipeProgram">Recipe Program</a></li>
           </ul>
         </li>
@@ -55,7 +56,7 @@
 </nav>
 
 
-	<!--
+<!--
 		<div id="chess" style="display:inline;float:left;position:absolute;top:40px;left:40px">	
 		
 			<h3 style="margin-top:60px;font-size:18px">World Championship (1972)</h3>	
@@ -88,8 +89,7 @@
 		
 		</div>
 -->
-			
-		<!--	
+<!--	
 		<div id="nav">
 			<ul>
 				<li data-toggle="modal" data-target="#myModal"><a id="contactbutton">Contact</a></li>
@@ -97,7 +97,7 @@
 				<li><a href="/#about">About</a></li>
 			</ul>
 		</div>
-		-->				
+		-->
 
 		
 	<!--End of jumbotron
@@ -107,8 +107,7 @@
 		<hr style="border-width:10px;background-color:#000000;border-color:#000000">
 		<div id="content">
 
-			<div id="about">
-				<div class="col-md-12">
+			<div id="about" class="col-md-12">
 					
 					<div class="col-md-6 col-sm-12">
 					
@@ -133,21 +132,21 @@
 					
 					
 					<hr style="border-width:3px">
-
-				</div>
+				
+			</div>
 				
 				<div id="portfolio">
 					<center><span id="portfolioText">Portfolio</span></center>
 					<hr>
 					
-				<div id="Commotion" class="col-md-12 col-sm-12">
+			<div id="Commotion" class="col-md-12">
+			
 					<div>
 						<center><b class="project-title">ComMotion</b></center>
 					</div>
 
 	<div class="project-content col-md-6 col-sm-12">
 	
-	<!--
 		<div class="project-subsection">
 		<div class="project-subtitle">When?</div>
 			<p>Spring (January-May) 2014
@@ -169,13 +168,12 @@
 		</ul>
 		</div>
 		<a href="https://github.com/r3d3y3/ComMotion" style="color:#FFFFFF;font-size:16px">https://github.com/r3d3y3/ComMotion</a>	
--->
-	</div>	
 
-   					<div id="gallery" class="ad-gallery col-md-6 col-sm-12">
-   			
-<!--   				
-     						 <div class="ad-image-wrapper" style="margin-bottom:-20px">
+	</div>	
+ 	
+   <div id="gallery" class="ad-gallery col-md-6 col-sm-12">
+   				
+     	<div class="ad-image-wrapper" style="margin-bottom:-20px">
      						 
       </div>
       <div class="ad-controls">
@@ -236,21 +234,22 @@
           </ul>
         </div>
       </div>
-      -->
+      
     <!--end of gallery-->
-    </div>	
-    
+    </div>
 
 		<!--End of ComMotion-->
 		</div>
+		
+		<hr class="col-md-12"></hr>
+		
+		<div id="GeoMusic" class="col-md-12">		
+		
+			<div> 
+				<center><b class="project-title">GeoMusic</b><img src="images/geomusic_icon.png" style="width:45px; height:45px;margin-left:10px"></img></center>
+			</div>
 	
-		<hr>
-		
-	<div id="GeoMusic">		
-		
-	<div> 
-		<center><b class="project-title">GeoMusic</b><img src="images/geomusic_icon.png" style="width:45px; height:45px;margin-left:10px"></img></center>
-	</div>
+	
 
 	<div id="gallery2" class="ad-gallery col-md-6 col-sm-12" style="display:inline;float:left;">
       <div class="ad-image-wrapper" style="margin-bottom:25px">
@@ -288,9 +287,10 @@
           </ul>
         </div>
       </div>
-    <!--End of Gallery2-->
+		
     </div>
-    
+	
+   
 		<div class="project-content col-md-6 col-sm-12">
 			<div class="project-subsection">
 				<div class="project-subtitle">When?</div>
@@ -320,14 +320,16 @@
 			<!--End of Geomusic-->
 			</div>
 
-			<hr>
+		<hr class="col-md-12"></hr>
 
-			<div id="RecipeProgram">			
+			<div id="RecipeProgram" class="col-md-12">			
 			
 			<div>
 				<center><b class="project-title">Recipe Program</b></center>
 			</div>
 
+			<!--
+	
    		<div id="gallery" class="ad-gallery col-lg-6 col-md-6 col-sm-12" style="display:inline;float:right;">
       <div class="ad-image-wrapper" style="margin-bottom:-20px">
       </div>
@@ -364,10 +366,10 @@
           </ul>
         </div>
       </div>
-    <!--end of gallery-->
+		
     </div>	
-
-	<div class="project-content col-lg-6 col-md-6 col-sm-12">
+-->
+	<div class="project-content col-md-6 col-sm-12">
 		<div class="project-subsection">
 			<div class="project-subtitle">When?</div>
 				<p>June-July 2012
@@ -393,8 +395,35 @@
 			
 	</div>
 	
+		<div class="project-content col-md-6 col-sm-12">
+		<div class="project-subsection">
+			<div class="project-subtitle">When?</div>
+				<p>June-July 2012
+			</div>
+		<div class="project-subsection">
+			<div class="project-subtitle">What was used?</div>
+			<p>Java</p>
+		</div>
+		<div class="project-subsection">
+			<div class="project-subtitle">Project Description</div>
+			<p>This is a program I worked on alone at the request of a friend of mine.  
+			The idea is that you can input recipes and then search through them either by name or by ingredients.  
+			Then you can see the recipe for the meal you select in a clean format.</p>	
+		</div>	
+		<div class="project-subsection">	
+			<div class="project-subtitle">My Role (everything)</div>
+			<ul>
+				<li>Creating a system to create, read, update, and delete recipes saved to text files</li>
+				<li>Designing layout and functionality</li>
+				<li>Testing and Debugging</li>
+			</ul>
+		</div>
+			
+	</div>	
+	
 		<!--End of Recipe Program-->
-		</div>		
+		</div>
+
 			<!--End of Portfolio-->
 		</div>		
 	<!--End of Content-->
