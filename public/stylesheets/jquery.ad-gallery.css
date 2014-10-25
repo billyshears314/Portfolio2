@@ -8,7 +8,7 @@
  * Demo and documentation: http://coffeescripter.com/code/ad-gallery/
  */
 .ad-gallery {
-  width: 575px;
+  width: 50%;
 
 }
 .ad-gallery, .ad-gallery * {

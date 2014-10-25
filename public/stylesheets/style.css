@@ -2,6 +2,8 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image:url('../images/zigzag_background.png');
   background-size:29%;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 p{
@@ -129,15 +131,16 @@ a:hover{
 		padding-left:20px;	
 		padding-right:20px;
 	}
-	
+		.ad-gallery{
+		width:100%;			
+	}
 }	
 	
 @media screen and (max-width: 767px){
 
-	.ad-gallery {
-  		width: 250px;
-	}	
-	
+	.ad-gallery{
+		width:100%;			
+	}
 }	
 	/*
 @media screen and (max-width: 800px) {
