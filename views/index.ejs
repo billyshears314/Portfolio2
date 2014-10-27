@@ -1,442 +1,584 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Alex Filipek</title>  
-		<link rel='stylesheet' href='/stylesheets/bootstrap.css' />
-		</link><link rel='stylesheet' href='/stylesheets/jquery.ad-gallery.css' />
-		</link><link rel='stylesheet' href='/stylesheets/gallery.css' />
-		<link rel='stylesheet' href='/stylesheets/style.css' />
-		</link>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />		
-		<!--<meta name="viewport" content="width=device-width, user-scalabe=no" />-->
-  </head>
+<head>
+    <title>Alex Filipek</title>
+    <link href='/stylesheets/bootstrap.css' rel='stylesheet'>
+    <link href='/stylesheets/jquery.ad-gallery.css' rel='stylesheet'>
+    <link href='/stylesheets/gallery.css' rel='stylesheet'>
+    <link href='/stylesheets/style.css' rel='stylesheet'>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!--<meta name="viewport" content="width=device-width, user-scalabe=no" />-->
+</head>
+
 <body>
+    <!--<div class="jumbotron">-->
+    <span id="signature" style="font-weight: bold">Alexander Filipek</span>
+    <span id="textAfterSignature">a Node.js full stack web developer living
+    outside of Boston</span>
 
-	<!--<div class="jumbotron">-->
-	
-	
-		<span id="signature"><b>Alexander Filipek</b></span>
-		<span id="textAfterSignature">a Node.js full stack web developer living outside of Boston</span>		
-	
-	
-<nav class="navbar navbar-default" role="navigation" style="margin-top:0px;background-color:">
-  <div class="container-fluid">
+    <nav class="navbar navbar-default" style=
+    "margin-top:0px;background-color:">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand" id="contactInformation">
+                    <span style=
+                    "margin-right:10px;font-size:16px"><strong>Phone:</strong>
+                    (508) 247-7419</span> <span style=
+                    "font-size:16px"><strong>E-mail:</strong>
+                    awfilipek@gmail.com</span>
+                </div><button class="navbar-toggle collapsed" data-target=
+                "#bs-example-navbar-collapse-1" data-toggle="collapse" type=
+                "button"><span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span>
+                <span class="icon-bar"></span></button>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
 
-    <div class="navbar-header">
+            <div class="collapse navbar-collapse" id=
+            "bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right" id="links">
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href=
+                        "#">Portfolio <span class="caret"></span></a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#Commotion">Commotion</a>
+                            </li>
+
+                            <li>
+                                <a href="#GeoMusic">Geomusic</a>
+                            </li>
+
+                            <li>
+                                <a href="#RecipeProgram">Recipe Program</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav><!--
+        <div id="chess" style="display:inline;float:left;position:absolute;top:40px;left:40px"> 
+        
+            <h3 style="margin-top:60px;font-size:18px">World Championship (1972)</h3>   
+            <h3 style="font-size:18px;margin-top:10px">Game 8</h3>  
+            <h4 style="position:absolute;left:152px;font-weight:bold">Spassky</h4>
+        
+            <div class="board" style="border-style:solid;border-width:2px;height:228px;width:228px;margin-left:75px;margin-top:40px">
+            
+                <% for(var i=0; i<8; i++) {%>
+                
+                    <div class="row" style="margin-left:0px">
     
-   	<div id="contactInformation" class="navbar-brand">
-			<span style="margin-right:10px;font-size:16px"><strong>Phone:</strong> (508) 247-7419</span>
-			<span style="font-size:16px"><strong>E-mail:</strong> awfilipek@gmail.com</span>
-		</div>
-	
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-	
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">About</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio <span class="caret"></span></a>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="#Commotion">Commotion</a></li>
-            <li><a href="#GeoMusic">Geomusic</a></li>
-            <li><a href="#RecipeProgram">Recipe Program</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div><!-- /.navbar-collapse -->
+                        <% for (var j=0; j<8; j++) { %>
     
-  </div><!-- /.container-fluid -->
-</nav>
-
-
-<!--
-		<div id="chess" style="display:inline;float:left;position:absolute;top:40px;left:40px">	
-		
-			<h3 style="margin-top:60px;font-size:18px">World Championship (1972)</h3>	
-			<h3 style="font-size:18px;margin-top:10px">Game 8</h3>	
-			<h4 style="position:absolute;left:152px;font-weight:bold">Spassky</h4>
-		
-			<div class="board" style="border-style:solid;border-width:2px;height:228px;width:228px;margin-left:75px;margin-top:40px">
-			
-				<% for(var i=0; i<8; i++) {%>
-				
-					<div class="row" style="margin-left:0px">
-	
-						<% for (var j=0; j<8; j++) { %>
-	
-							<div id=<%=j+i*8%> class="space" style="width:28px;height:28px;display:inline;float:left; background-color:#FFFFFF;margin-right:0px">
-								<div class="piece">
-									<img style="width:25px; height:25px"></img>
-								</div>
-							</div>
-	
-						<% } %>
-		
-					</div>
-					
-				<% } %>
-		
-			</div>
-		
-			<h4 style="position:absolute;left:157px;top:380px;font-weight:bold">Fischer</h4>
-		
-		</div>
+                            <div id=<%=j+i*8%> class="space" style="width:28px;height:28px;display:inline;float:left; background-color:#FFFFFF;margin-right:0px">
+                                <div class="piece">
+                                    <img style="width:25px; height:25px"></img>
+                                </div>
+                            </div>
+    
+                        <% } %>
+        
+                    </div>
+                    
+                <% } %>
+        
+            </div>
+        
+            <h4 style="position:absolute;left:157px;top:380px;font-weight:bold">Fischer</h4>
+        
+        </div>
 -->
-<!--	
-		<div id="nav">
-			<ul>
-				<li data-toggle="modal" data-target="#myModal"><a id="contactbutton">Contact</a></li>
-				<li><a href="/#portfolio">Portfolio</a></li>
-				<li><a href="/#about">About</a></li>
-			</ul>
-		</div>
-		-->
-
-		
-	<!--End of jumbotron
-	</div>-->
-
-	<div id="backimage">
-		<hr style="border-width:10px;background-color:#000000;border-color:#000000">
-		<div id="content">
-
-			<div id="about" class="col-md-12 col-sm-12 col-xs-12">
-					
-					<div class="col-md-6 col-sm-12 col-xs-12">
-					
-						<img src="images/profile.jpg" width="114" height="150" style="border-radius:10px;position:relative;float:left;margin-right:20px;margin-top:13px"></img>
-										
-						<h4><strong>Bio</strong></h4>						
-						<p>My name is Alexander Filipek, a full stack Node.js web developer in the Boston Area, also looking to get into the Ruby on Rails game.  I graduated from the University of Massachusetts Amherst majoring in Computer Science in 2014.</p>
-						<p>I enjoy the craft of programming and working on new and challenging projects.  I love to learn more about all aspects of web development and to push myself to create innovative products.</p>
-					</div>
-					<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:20px">
-					<h5><strong>Languages and Tools</strong></h5>
-						<ul>
-							<li style="margin-bottom:5px"><i>Proficient:</i> Node.js, HTML5, CSS3, Javascript, JQuery, MongoDB, and Git</li>	
-							<li><i>Some Experience:</i> Ruby on Rails, Ruby, Angular.js, Python, and SQL</li>				
-						</ul>
-					<h5><strong>Operating Systems:</strong></h5>
-					<ul>
-						<li>Linux, Windows</li>
-					</ul>
-					
-					</div>	
-					
-					<hr style="border-width:3px">
-				
-			</div>
-				
-				<div id="portfolio">
-					<center><span id="portfolioText">Portfolio</span></center>
-					<hr>
-					
-			<div id="Commotion" class="col-md-12 col-sm-12 col-xs-12">
-			
-					<div>
-						<center><b class="project-title">ComMotion</b></center>
-					</div>
-
-	<div class="project-content col-md-6 col-sm-12 col-xs-12">
-	
-		<div class="project-subsection">
-		<div class="project-subtitle">When?</div>
-			<p>Spring (January-May) 2014
-		</div>
-		<div class="project-subsection">
-			<div class="project-subtitle">What was used?</div>
-			<p>Node.js, Express Framework, PostgreSQL, JQuery Ui, Git/GitHub</p>
-		</div>
-		<div class="project-subsection">
-		<div class="project-subtitle">Project Description</div>
-		<p>ComMotion was a fitness website which relied on user generated data.  Users would be able to create/edit exercises and workouts which other users could then browse through.</p>	
-		</div>	
-		<div class="project-subsection">	
-		<div class="project-subtitle">My Role</div>
-		<ul>
-			<li>Creating the layout and design for most of the pages</li>
-			<li>Connecting the front end to work with the back end</li>
-			<li>Also made a few custom complex SQL queries</li>
-		</ul>
-		</div>
-		<a href="https://github.com/r3d3y3/ComMotion" style="color:#FFFFFF;font-size:16px">https://github.com/r3d3y3/ComMotion</a>	
-
-	</div>	
- 	
-   <div id="gallery" class="ad-gallery col-md-6 col-sm-12 col-xs-12">
-   				
-     	<div class="ad-image-wrapper" style="margin-bottom:-20px">
-     						 
-      </div>
-      <div class="ad-controls">
-      </div>
-      <div class="ad-nav">
-        <div class="ad-thumbs" style="margin-top:5px">
-          <ul class="ad-thumb-list">
-            <li>
-              <a href="images/commotion/locker.png">
-                <img src="images/commotion/resize-locker.png" title="Home Screen" alt="Post a message/See messages of people you are following" class="image0">
-              </a>
-            </li>
-            <li>
-              <a href="images/commotion/create_profile.png">
-                <img src="images/commotion/resize-create_profile.png" title="Create Profile" alt="Fill out this form to fill in your user information" class="image1">
-              </a>
-            </li>
-            <li>
-              <a href="images/commotion/profile.png">
-                <img src="images/commotion/resize-profile.png" title="Profile" alt="See information about yourself" class="image2">
-              </a>
-            </li>
-            <li>
-              <a href="images/commotion/followers.png">
-                <img src="images/commotion/resize-followers.png" title="Your Followers" alt="See who your followers are" class="image3">
-              </a>
-            </li>
-            <li>
-              <a href="images/commotion/create_exercise.png">
-                <img src="images/commotion/resize-create_exercise.png" title="Exercise Creator" alt="Fill out this form to create an exercise" class="image4">
-              </a>
-            </li>
-            <li>
-              <a href="images/commotion/create_workout.png">
-                <img src="images/commotion/resize-create_workout.png" title="Workout Creator" alt="Search for exercises, then drag and drop them over to create a workout" class="image5">
-              </a>
-            </li>
-            <li>
-              <a href="images/commotion/findusers.png">
-                <img src="images/commotion/resize-findusers.png" title="Find Users" alt="You can see the most popular users or search for others on the left" class="image6">
-              </a>
-            </li>
-            <li>
-              <a href="images/commotion/exercise_results.png">
-                <img src="images/commotion/resize-exercise_results.png" title="Exercise Search Results" alt="A list of close match exercises is returned after you search for them" class="image7">
-              </a>
-            </li>
-            <li>
-              <a href="images/commotion/favorites.png">
-                <img src="images/commotion/resize-favorites.png" title="Favorite Exercises/Workouts" alt="Find all of your favorite exercises and workouts in this one location" class="image8">
-              </a>
-            </li>
-            <li>
-              <a href="images/commotion/exercise.png">
-                <img src="images/commotion/resize-exercise.png" title="Exercise Entry" alt="Here is entry information for the Squat exercise" class="image9">
-              </a>
-            </li>
-          </ul>
+    <!--    
+        <div id="nav">
+            <ul>
+                <li data-toggle="modal" data-target="#myModal"><a id="contactbutton">Contact</a></li>
+                <li><a href="/#portfolio">Portfolio</a></li>
+                <li><a href="/#about">About</a></li>
+            </ul>
         </div>
-      </div>
-      
-    <!--end of gallery-->
-    </div>
+        -->
+    <!--End of jumbotron
+    </div>-->
 
-		<!--End of ComMotion-->
-		</div>
-		
-		<hr class="col-md-12 col-sm-12 col-xs-12"></hr>
-		
-		<div id="GeoMusic" class="col-md-12 col-sm-12 col-xs-12">		
-		
-			<div> 
-				<center><b class="project-title">GeoMusic</b><img src="images/geomusic_icon.png" style="width:45px; height:45px;margin-left:10px"></img></center>
-			</div>
-	
-	<div id="gallery2" class="ad-gallery col-md-6 col-sm-12 col-xs-12" style="display:inline;float:left;">
-      <div class="ad-image-wrapper" style="margin-bottom:25px">
-      </div>
-      <div class="ad-controls">
-      </div>
-      <div class="ad-nav">
-        <div class="ad-thumbs" style="margin-top:5px">
-          <ul class="ad-thumb-list">
-            <li>
-              <a href="images/geomusic/zoomout.png">
-                <img src="images/geomusic/resize4-zoomout.png" class="image0">
-              </a>
-            </li>
-            <li>
-              <a href="images/geomusic/normalzoom.png">
-                <img src="images/geomusic/resize-normalzoom.png" class="image1">
-              </a>
-            </li>
-            <li>
-              <a href="images/geomusic/zoomin.png">
-                <img src="images/geomusic/resize-zoomin.png" class="image2">
-              </a>
-            </li>
-            <li>
-              <a href="images/geomusic/musicplayer.png">
-                <img src="images/geomusic/resize-musicplayer.png" class="image3">
-              </a>
-            </li>
-            <li>
-              <a href="images/geomusic/settings.png">
-                <img src="images/geomusic/resize-settings.png" class="image4">
-              </a>
-            </li>
-          </ul>
+    <div id="backimage">
+
+        <div id="content">
+            <div class="col-md-12 col-sm-12 col-xs-12" id="about">
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <img height="150" src="images/profile.jpg" style=
+                    "border-radius:10px;position:relative;float:left;margin-right:20px;margin-top:13px"
+                    width="114">
+
+                    <h4><strong>Bio</strong></h4>
+
+                    <p>My name is Alexander Filipek, a full stack Node.js web
+                    developer in the Boston Area, also looking to get into the
+                    Ruby on Rails game. I graduated from the University of
+                    Massachusetts Amherst majoring in Computer Science in
+                    2014.</p>
+
+                    <p>I enjoy the craft of programming and working on new and
+                    challenging projects. I love to learn more about all
+                    aspects of web development and to push myself to create
+                    innovative products.</p>
+                </div>
+
+                <div class="col-md-6 col-sm-12 col-xs-12" style=
+                "padding-left:20px">
+                    <h4><strong>Languages and Tools</strong></h4>
+
+                    <ul>
+                        <li style="margin-bottom:5px"><i>Proficient:</i>
+                        Node.js, HTML5, CSS3, Javascript, JQuery, MongoDB, and
+                        Git</li>
+
+                        <li><i>Some Experience:</i> Ruby on Rails, Ruby,
+                        Angular.js, Python, and SQL</li>
+                    </ul>
+
+                    <h4><strong>Operating Systems</strong></h4>
+
+                    <ul>
+                        <li>Linux, Windows</li>
+                    </ul>
+                </div>
+                <hr style="border-width:3px">
+            </div>
+
+            <div id="portfolio">
+                <center><span id="portfolioText">Portfolio</span><br></center>
+                <hr>
+
+                <div class="col-md-12 col-sm-12 col-xs-12" id="Commotion">
+                    <center>
+                        <b class="project-title">ComMotion</b><br>
+                    </center>
+
+                    <div class="project-content col-md-6 col-sm-12 col-xs-12">
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                When?
+                            </div>
+
+                            <p>Spring (January-May) 2014</p>
+                        </div>
+
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                Who was the project for?
+                            </div>
+
+                            <p>Group Project for Web Development Class</p>
+                        </div>
+
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                What was used?
+                            </div>
+
+                            <p>Node.js, Express Framework, PostgreSQL, JQuery
+                            Ui, Git/GitHub</p>
+                        </div>
+
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                Project Description
+                            </div>
+
+                            <p>ComMotion was a fitness website which relied on
+                            user generated data. Users would be able to
+                            create/edit exercises and workouts which other
+                            users could then browse through.</p>
+                        </div>
+
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                My Role
+                            </div>
+
+                            <ul>
+                                <li>Creating the layout and design for most of
+                                the pages</li>
+
+                                <li>Connecting the front end to work with the
+                                back end</li>
+
+                                <li>Also made a few custom complex SQL
+                                queries</li>
+                            </ul>
+                        </div><a href="https://github.com/r3d3y3/ComMotion"
+                        style=
+                        "color:#FFFFFF;font-size:16px">https://github.com/r3d3y3/ComMotion</a>
+                    </div>
+
+                    <div class="ad-gallery col-md-6 col-sm-12 col-xs-12" id=
+                    "gallery">
+                        <div class="ad-image-wrapper" style=
+                        "margin-bottom:-20px"></div>
+
+                        <div class="ad-controls"></div>
+
+                        <div class="ad-nav">
+                            <div class="ad-thumbs" style="margin-top:5px">
+                                <ul class="ad-thumb-list">
+                                    <li>
+                                        <a href=
+                                        "images/commotion/locker.png"><img alt=
+                                        "Post a message/See messages of people you are following"
+                                        class="image0" src=
+                                        "images/commotion/resize-locker.png"
+                                        title="Home Screen"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/commotion/create_profile.png"><img alt="Fill out this form to fill in your user information"
+                                        class="image1" src=
+                                        "images/commotion/resize-create_profile.png"
+                                        title="Create Profile"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/commotion/profile.png"><img alt="See information about yourself"
+                                        class="image2" src=
+                                        "images/commotion/resize-profile.png"
+                                        title="Profile"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/commotion/followers.png"><img alt="See who your followers are"
+                                        class="image3" src=
+                                        "images/commotion/resize-followers.png"
+                                        title="Your Followers"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/commotion/create_exercise.png"><img alt="Fill out this form to create an exercise"
+                                        class="image4" src=
+                                        "images/commotion/resize-create_exercise.png"
+                                        title="Exercise Creator"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/commotion/create_workout.png"><img alt="Search for exercises, then drag and drop them over to create a workout"
+                                        class="image5" src=
+                                        "images/commotion/resize-create_workout.png"
+                                        title="Workout Creator"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/commotion/findusers.png"><img alt="You can see the most popular users or search for others on the left"
+                                        class="image6" src=
+                                        "images/commotion/resize-findusers.png"
+                                        title="Find Users"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/commotion/exercise_results.png">
+                                        <img alt=
+                                        "A list of close match exercises is returned after you search for them"
+                                        class="image7" src=
+                                        "images/commotion/resize-exercise_results.png"
+                                        title="Exercise Search Results"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/commotion/favorites.png"><img alt="Find all of your favorite exercises and workouts in this one location"
+                                        class="image8" src=
+                                        "images/commotion/resize-favorites.png"
+                                        title=
+                                        "Favorite Exercises/Workouts"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/commotion/exercise.png"><img alt="Here is entry information for the Squat exercise"
+                                        class="image9" src=
+                                        "images/commotion/resize-exercise.png"
+                                        title="Exercise Entry"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div><!--end of gallery-->
+                    </div><!--End of ComMotion-->
+                </div>
+                <hr class="col-md-12 col-sm-12 col-xs-12">
+
+                <div class="col-md-12 col-sm-12 col-xs-12" id="GeoMusic">
+                    <center>
+                        <b class="project-title">GeoMusic</b><img src=
+                        "images/geomusic_icon.png" style=
+                        "width:45px; height:45px;margin-left:10px"><br>
+                    </center>
+
+                    <div class="ad-gallery col-md-6 col-sm-12 col-xs-12" id=
+                    "gallery2" style="display:inline;float:left;">
+                        <div class="ad-image-wrapper" style=
+                        "margin-bottom:25px"></div>
+
+                        <div class="ad-controls"></div>
+
+                        <div class="ad-nav">
+                            <div class="ad-thumbs" style="margin-top:5px">
+                                <ul class="ad-thumb-list">
+                                    <li>
+                                        <a href=
+                                        "images/geomusic/zoomout.png"><img class="image0"
+                                        src=
+                                        "images/geomusic/resize4-zoomout.png"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/geomusic/normalzoom.png"><img class="image1"
+                                        src=
+                                        "images/geomusic/resize-normalzoom.png"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/geomusic/zoomin.png"><img class="image2"
+                                        src=
+                                        "images/geomusic/resize-zoomin.png"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/geomusic/musicplayer.png"><img class="image3"
+                                        src=
+                                        "images/geomusic/resize-musicplayer.png"></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/geomusic/settings.png"><img class="image4"
+                                        src=
+                                        "images/geomusic/resize-settings.png"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content col-md-6 col-sm-12 col-xs-12">
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                When?
+                            </div>
+
+                            <p>Spring (January-May) 2013</p>
+                        </div>
+
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                Who was the project for?
+                            </div>
+
+                            <p>Group Project for Software Engineering Class</p>
+                        </div>
+
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                What was used?
+                            </div>
+
+                            <p>Android SDK, Google Maps API</p>
+                        </div>
+
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                Project Description
+                            </div>
+
+                            <p>The idea behind GeoMusic was to combine people
+                            otherwise isolated in listening to their music by
+                            allowing them to share what music they are
+                            listening to which can then be seen by all users on
+                            a Google Map, with additional pin markers showing
+                            users with information such as Song and Artist.</p>
+                        </div>
+
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                My Role
+                            </div>
+
+                            <ul>
+                                <li>Front end for login/signup and
+                                settings</li>
+
+                                <li>Adding Google Maps functionality</li>
+
+                                <li>Adjusting bitmaps of pins on map to look
+                                and behave pixel perfectly</li>
+                            </ul>
+                        </div>
+                    </div><!--End of Geomusic-->
+                </div>
+                <hr class="col-md-12 col-sm-12 col-xs-12">
+
+                <div class="col-md-12 col-sm-12 col-xs-12" id="RecipeProgram">
+                    <center>
+                        <b class="project-title">Recipe Program</b><br>
+                    </center>
+
+                    <div class="ad-gallery col-md-6 col-sm-12 col-xs-12" id=
+                    "gallery3" style="display:inline;float:right;">
+                        <div class="ad-image-wrapper" style=
+                        "margin-bottom:-20px"></div>
+
+                        <div class="ad-controls" style="margin-top:13px"></div>
+
+                        <div class="ad-nav">
+                            <div class="ad-thumbs" style="margin-top:5px">
+                                <ul class="ad-thumb-list">
+                                    <li>
+                                        <a href=
+                                        "images/recipe/add_recipe.png"><img alt=""
+                                        class="image0" src=
+                                        "images/recipe/resize-add_recipe.png"
+                                        title=""></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/recipe/meal_list.png"><img alt=
+                                        "" class="image1" src=
+                                        "images/recipe/resize-meal_list.png"
+                                        title=""></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/recipe/main_screen.png"><img alt=""
+                                        class="image2" src=
+                                        "images/recipe/resize-main_screen.png"
+                                        title=""></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/recipe/ingredient_search.png"><img alt=""
+                                        class="image3" src=
+                                        "images/recipe/resize-ingredient_search.png"
+                                        title=""></a>
+                                    </li>
+
+                                    <li>
+                                        <a href=
+                                        "images/recipe/individual_recipe.png"><img alt=""
+                                        class="image4" src=
+                                        "images/recipe/resize-individual_recipe.png"
+                                        title=""></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-content col-md-6 col-sm-12 col-xs-12">
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                When?
+                            </div>
+
+                            <p>June-July 2012</p>
+                        </div>
+
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                Who was the project for?
+                            </div>
+
+                            <p>A friend of mine</p>
+                        </div>
+
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                What was used?
+                            </div>
+
+                            <p>Java</p>
+                        </div>
+
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                Project Description
+                            </div>
+
+                            <p>This is a program I worked on alone at the
+                            request of a friend of mine. The idea is that you
+                            can input recipes and then search through them
+                            either by name or by ingredients. Then you can see
+                            the recipe for the meal you select in a standard
+                            format.</p>
+                        </div>
+
+                        <div class="project-subsection">
+                            <div class="project-subtitle">
+                                My Role (everything)
+                            </div>
+
+                            <ul>
+                                <li>Creating a system to create, read, update,
+                                and delete recipes saved to text files</li>
+
+                                <li>Designing layout and functionality</li>
+
+                                <li>Testing and Debugging</li>
+                            </ul>
+                        </div>
+                    </div><!--End of Recipe Program-->
+                </div><!--End of Portfolio-->
+            </div><!--End of Content-->
+        </div><!--End of backimage-->
+    </div><!-- Modal -->
+
+    <div class="modal fade" id="myModal" tabindex="-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="close" data-dismiss="modal" type=
+                    "button"><span>&times;</span><span class=
+                    "sr-only">Close</span></button>
+
+                    <h4 class="modal-title" id="myModalLabel">Send me an email
+                    or call (508) 247-7419</h4>
+                </div>
+
+                <div class="modal-body">
+                    To: awfilipek@gmail.com<br style="margin-bottom:5px">
+                    Subject:<br>
+                    <input type="text"><br>
+                    Message:<br>
+                    <textarea cols="28" rows="4">
+</textarea><br>
+                    Your email address:<br>
+                    <input type="text"><br>
+                </div>
+
+                <div class="modal-footer">
+                    <button class="btn btn-default" data-dismiss="modal" type=
+                    "button">Close</button> <button class="btn btn-primary" id=
+                    "sendmessage" type="button">Send Message</button>
+                </div>
+            </div>
         </div>
-      </div>
-		
-    </div>
-	
-   
-		<div class="project-content col-md-6 col-sm-12 col-xs-12">
-			<div class="project-subsection">
-				<div class="project-subtitle">When?</div>
-					<p>Spring (January-May) 2013
-				</div>
-				<div class="project-subsection">
-					<div class="project-subtitle">What was used?</div>
-					<p>Android SDK, Google Maps API</p>
-				</div>
-				<div class="project-subsection">
-					<div class="project-subtitle">Project Description</div>
-					<p>The idea behind GeoMusic was to combine people otherwise isolated in listening to their music by allowing them to share what
-					music they are listening to which can then be seen by all users on a Google Map, with additional pin markers showing users with 
-					information such as Song and Artist.</p>
-				</div>
-				<div class="project-subsection">
-					<div class="project-subtitle">My Role</div>		
-					<ul>
-						<li>Front end for login/signup and settings</li>
-						<li>Adding Google Maps functionality</li> 
-						<li>Adjusting bitmaps of pins on map to look and behave pixel perfectly</li>
-					</ul>
-				</div>
-	
-			</div>
-			
-			<!--End of Geomusic-->
-			</div>
-
-		<hr class="col-md-12 col-sm-12 col-xs-12"></hr>
-
-			<div id="RecipeProgram" class="col-md-12 col-sm-12 col-xs-12">			
-			
-			<div>
-				<center><b class="project-title">Recipe Program</b></center>
-			</div>
-	
-   		<div id="gallery3" class="ad-gallery col-md-6 col-sm-12 col-xs-12" style="display:inline;float:right;">
-      <div class="ad-image-wrapper" style="margin-bottom:-20px">
-      </div>
-      <div class="ad-controls" style="margin-top:13px">
-      </div>
-      <div class="ad-nav">
-        <div class="ad-thumbs" style="margin-top:5px">
-          <ul class="ad-thumb-list">
-            <li>
-              <a href="images/recipe/add_recipe.png">
-                <img src="images/recipe/resize-add_recipe.png" title="" alt="" class="image0">
-              </a>
-            </li>
-            <li>
-              <a href="images/recipe/meal_list.png">
-                <img src="images/recipe/resize-meal_list.png" title="" alt="" class="image1">
-              </a>
-            </li>
-            <li>
-              <a href="images/recipe/main_screen.png">
-                <img src="images/recipe/resize-main_screen.png" title="" alt="" class="image2">
-              </a>
-            </li>
-            <li>
-              <a href="images/recipe/ingredient_search.png">
-                <img src="images/recipe/resize-ingredient_search.png" title="" alt="" class="image3">
-              </a>
-            </li>
-            <li>
-              <a href="images/recipe/individual_recipe.png">
-                <img src="images/recipe/resize-individual_recipe.png" title="" alt="" class="image4">
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-		
-    </div>
-    	
-	<div class="project-content col-md-6 col-sm-12 col-xs-12">
-		<div class="project-subsection">
-			<div class="project-subtitle">When?</div>
-				<p>June-July 2012
-			</div>
-		<div class="project-subsection">
-			<div class="project-subtitle">What was used?</div>
-			<p>Java</p>
-		</div>
-		<div class="project-subsection">
-			<div class="project-subtitle">Project Description</div>
-			<p>This is a program I worked on alone at the request of a friend of mine.  
-			The idea is that you can input recipes and then search through them either by name or by ingredients.  
-			Then you can see the recipe for the meal you select in a standard format.</p>	
-		</div>	
-		<div class="project-subsection">	
-			<div class="project-subtitle">My Role (everything)</div>
-			<ul>
-				<li>Creating a system to create, read, update, and delete recipes saved to text files</li>
-				<li>Designing layout and functionality</li>
-				<li>Testing and Debugging</li>
-			</ul>
-		</div>
-			
-	</div>
-		
-	
-		<!--End of Recipe Program-->
-		</div>
-
-			<!--End of Portfolio-->
-		</div>		
-	<!--End of Content-->
-	</div>
-<!--End of backimage-->
-</div>
-
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-sm">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Send me an email or call (508) 247-7419</h4>
-      </div>
-      <div class="modal-body">
-        To: awfilipek@gmail.com
-		<br style="margin-bottom:5px">
-		Subject:
-		<br>
-		<input type="text"></input>
-		<br>
-		Message:
-		<br>
-		<textarea rows="4" cols="28"></textarea>
-		<br>
-		Your email address:
-		<br>
-		<input type="text"></input>
-		<br>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" id = "sendmessage">Send Message</button>
-      </div>
-    </div>
-  </div>
-</div>
-  </body>
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-	<script src="javascripts/chessboard.js"></script>
-	<script src="javascripts/animation.js"></script>
-	<script src="javascripts/jquery.ad-gallery.js"></script>
-	<script src="javascripts/miscellaneous.js"></script>
-	<script src="javascripts/bootstrap.js"></script>
+    </div><script src=
+    "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="javascripts/chessboard.js"></script> <script src="javascripts/animation.js"></script> <script src="javascripts/jquery.ad-gallery.js"></script> <script src="javascripts/miscellaneous.js"></script> <script src="javascripts/bootstrap.js"></script> 
+</body>
 </html>

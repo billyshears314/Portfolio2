@@ -6,6 +6,10 @@ body {
   overflow-x: hidden;
 }
 
+h4{
+	font-size:16px;	
+}
+
 p{
 	text-align:justify;		
 }
@@ -28,6 +32,10 @@ margin-left:-50px;
 margin-right:-50px;
 clip:rect(0, 0, 100px, 200px);
 padding-top:20px;
+}
+
+#links > li > a, #links > li > ul > li > a{
+	font-size:18px;
 }
 
 #backimage{
@@ -95,14 +103,24 @@ a:hover{
  color:#FFFFFF;
  font-size:16px;
 }
+
+#about{
+	margin-bottom:30px;	
+}
  
 #portfolioText {
 	font-size:54px;
 	color:#FFFFFF;
 }
 
+.project-content{
+	margin-top:25px;	
+	
+}
+
 .project-title{
 	font-size:24px;	
+	text-align:center;
 	}
 	
 .project-subtitle{
@@ -111,7 +129,7 @@ a:hover{
 	}
 	
 .project-subsection{
-	margin-bottom:30px;	
+	margin-bottom:25px;	
 	}
 	
 #Commotion{
