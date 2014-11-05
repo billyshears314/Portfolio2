@@ -3,20 +3,20 @@
 <head>
     <title>Alex Filipek</title>
     <link href='/stylesheets/bootstrap.css' rel='stylesheet'>
-    <link href='/stylesheets/jquery.ad-gallery.css' rel='stylesheet'>
-    <link href='/stylesheets/gallery.css' rel='stylesheet'>
     <link href='/stylesheets/style.css' rel='stylesheet'>
+    <link type="text/css" href="stylesheets/bottom.css" rel="stylesheet" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <!--<meta name="viewport" content="width=device-width, user-scalabe=no" />-->
 </head>
 
 <body>
-    <!--<div class="jumbotron">-->
     <span id="signature" style="font-weight: bold">Alexander Filipek</span>
     <span id="textAfterSignature">a Node.js full stack web developer living
     outside of Boston</span>
 
-    <nav class="navbar navbar-default" style=
+	<div class="bootstrap">
+
+    <nav class="navbar navbar-inverse" style=
     "margin-top:0px;background-color:">
         <div class="container-fluid">
             <div class="navbar-header">
@@ -32,7 +32,6 @@
                 <span class="icon-bar"></span> <span class="icon-bar"></span>
                 <span class="icon-bar"></span></button>
             </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
 
             <div class="collapse navbar-collapse" id=
             "bs-example-navbar-collapse-1">
@@ -60,9 +59,10 @@
                         </ul>
                     </li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-    </nav><!--
+            </div>
+        </div> 
+    </nav>
+    </div><!--
         <div id="chess" style="display:inline;float:left;position:absolute;top:40px;left:40px"> 
         
             <h3 style="margin-top:60px;font-size:18px">World Championship (1972)</h3>   
@@ -110,11 +110,12 @@
     <div id="backimage">
 
         <div id="content">
-            <div class="col-md-12 col-sm-12 col-xs-12" id="about">
+              <hr style="border-width:3px">
+            <div class="col-md-12 col-sm-12 col-xs-12 bootstrap" id="about">
                 <div class="col-md-6 col-sm-12 col-xs-12">
-                    <img height="150" src="images/profile.jpg" style=
+                    <img height="180" src="images/fun_profile3.jpg" style=
                     "border-radius:10px;position:relative;float:left;margin-right:20px;margin-top:13px"
-                    width="114">
+                    width="127">
 
                     <h4><strong>Bio</strong></h4>
 
@@ -149,7 +150,7 @@
                         <li>Linux, Windows</li>
                     </ul>
                 </div>
-                <hr style="border-width:3px">
+          
             </div>
 
             <div id="portfolio">
@@ -161,7 +162,7 @@
                         <b class="project-title">ComMotion</b><br>
                     </center>
 
-                    <div class="project-content col-md-6 col-sm-12 col-xs-12">
+                    <div class="project-content col-md-5 col-sm-12 col-xs-12">
                         <div class="project-subsection">
                             <div class="project-subtitle">
                                 When?
@@ -217,103 +218,25 @@
                         style=
                         "color:#FFFFFF;font-size:16px">https://github.com/r3d3y3/ComMotion</a>
                     </div>
-
-                    <div class="ad-gallery col-md-6 col-sm-12 col-xs-12" id=
-                    "gallery">
-                        <div class="ad-image-wrapper" style=
-                        "margin-bottom:-20px"></div>
-
-                        <div class="ad-controls"></div>
-
-                        <div class="ad-nav">
-                            <div class="ad-thumbs" style="margin-top:5px">
-                                <ul class="ad-thumb-list">
-                                    <li>
-                                        <a href=
-                                        "images/commotion/locker.png"><img alt=
-                                        "Post a message/See messages of people you are following"
-                                        class="image0" src=
-                                        "images/commotion/resize-locker.png"
-                                        title="Home Screen"></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/commotion/create_profile.png"><img alt="Fill out this form to fill in your user information"
-                                        class="image1" src=
-                                        "images/commotion/resize-create_profile.png"
-                                        title="Create Profile"></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/commotion/profile.png"><img alt="See information about yourself"
-                                        class="image2" src=
-                                        "images/commotion/resize-profile.png"
-                                        title="Profile"></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/commotion/followers.png"><img alt="See who your followers are"
-                                        class="image3" src=
-                                        "images/commotion/resize-followers.png"
-                                        title="Your Followers"></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/commotion/create_exercise.png"><img alt="Fill out this form to create an exercise"
-                                        class="image4" src=
-                                        "images/commotion/resize-create_exercise.png"
-                                        title="Exercise Creator"></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/commotion/create_workout.png"><img alt="Search for exercises, then drag and drop them over to create a workout"
-                                        class="image5" src=
-                                        "images/commotion/resize-create_workout.png"
-                                        title="Workout Creator"></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/commotion/findusers.png"><img alt="You can see the most popular users or search for others on the left"
-                                        class="image6" src=
-                                        "images/commotion/resize-findusers.png"
-                                        title="Find Users"></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/commotion/exercise_results.png">
-                                        <img alt=
-                                        "A list of close match exercises is returned after you search for them"
-                                        class="image7" src=
-                                        "images/commotion/resize-exercise_results.png"
-                                        title="Exercise Search Results"></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/commotion/favorites.png"><img alt="Find all of your favorite exercises and workouts in this one location"
-                                        class="image8" src=
-                                        "images/commotion/resize-favorites.png"
-                                        title=
-                                        "Favorite Exercises/Workouts"></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/commotion/exercise.png"><img alt="Here is entry information for the Squat exercise"
-                                        class="image9" src=
-                                        "images/commotion/resize-exercise.png"
-                                        title="Exercise Entry"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div><!--end of gallery-->
+   
+                    	<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:0px; margin-left:0px">
+	                    	<div class="pikachoose horizontal"  style="padding-top:25px">
+	
+									<ul id="pikame" class="jcarousel-skin-pika">
+										<li><img src="images/commotion/create_exercise.png"/><span>Fill out this form to create an exercise</span></li>
+										<li><img src="images/commotion/create_profile.png"/><span>Fill out this form to fill in your user information</span></li>
+										<li><img src="images/commotion/create_workout.png"/><span>Search for exercises, then drag and drop them over to create a workout</span></li>
+										<li><img src="images/commotion/exercise.png"/><span>Here is entry information for the Squat exercise</span></li>
+										<li><img src="images/commotion/exercise_results.png"/><span>A list of close match exercises is returned after you search for them</span></li>
+										<li><img src="images/commotion/favorites.png"/><span>Find all of your favorite exercises and workouts in this one location</span></li>
+										<li><img src="images/commotion/findusers.png"/><span>You can see the most popular users or search for others on the left</span></li>
+										<li><img src="images/commotion/followers.png"/><span>See who your followers are</span></li>
+										<li><img src="images/commotion/locker.png"/><span>Post a message/See messages of people you are following</span></li>
+										<li><img src="images/commotion/profile.png"/><span>Look at user information</span></li>	
+									
+									</ul>
+								</div>
+							</div>
                     </div><!--End of ComMotion-->
                 </div>
                 <hr class="col-md-12 col-sm-12 col-xs-12">
@@ -324,57 +247,20 @@
                         "images/geomusic_icon.png" style=
                         "width:45px; height:45px;margin-left:10px"><br>
                     </center>
+                    
+                 		<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:0px; margin-left:0px">
+                 			<div class="pikachoose vertical"  style="padding-top:25px">
+	
+									<ul id="pikame2" class="jcarousel-skin-pika">
+										<li><img src="images/geomusic/zoomout.png"/></li>
+										<li><img src="images/geomusic/normalzoom.png"/></li>
+										<li><img src="images/geomusic/zoomin.png"/></li>
+										<li><img src="images/geomusic/musicplayer.png"/></li>
+									</ul>
+							 	</div>
+						  	</div>
 
-                    <div class="ad-gallery col-md-6 col-sm-12 col-xs-12" id=
-                    "gallery2" style="display:inline;float:left;">
-                        <div class="ad-image-wrapper" style=
-                        "margin-bottom:25px"></div>
-
-                        <div class="ad-controls"></div>
-
-                        <div class="ad-nav">
-                            <div class="ad-thumbs" style="margin-top:5px">
-                                <ul class="ad-thumb-list">
-                                    <li>
-                                        <a href=
-                                        "images/geomusic/zoomout.png"><img class="image0"
-                                        src=
-                                        "images/geomusic/resize4-zoomout.png"></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/geomusic/normalzoom.png"><img class="image1"
-                                        src=
-                                        "images/geomusic/resize-normalzoom.png"></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/geomusic/zoomin.png"><img class="image2"
-                                        src=
-                                        "images/geomusic/resize-zoomin.png"></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/geomusic/musicplayer.png"><img class="image3"
-                                        src=
-                                        "images/geomusic/resize-musicplayer.png"></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/geomusic/settings.png"><img class="image4"
-                                        src=
-                                        "images/geomusic/resize-settings.png"></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-content col-md-6 col-sm-12 col-xs-12">
+                    <div class="project-content col-md-5 col-sm-12 col-xs-12">
                         <div class="project-subsection">
                             <div class="project-subtitle">
                                 When?
@@ -436,61 +322,8 @@
                         <b class="project-title">Recipe Program</b><br>
                     </center>
 
-                    <div class="ad-gallery col-md-6 col-sm-12 col-xs-12" id=
-                    "gallery3" style="display:inline;float:right;">
-                        <div class="ad-image-wrapper" style=
-                        "margin-bottom:-20px"></div>
 
-                        <div class="ad-controls" style="margin-top:13px"></div>
-
-                        <div class="ad-nav">
-                            <div class="ad-thumbs" style="margin-top:5px">
-                                <ul class="ad-thumb-list">
-                                    <li>
-                                        <a href=
-                                        "images/recipe/add_recipe.png"><img alt=""
-                                        class="image0" src=
-                                        "images/recipe/resize-add_recipe.png"
-                                        title=""></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/recipe/meal_list.png"><img alt=
-                                        "" class="image1" src=
-                                        "images/recipe/resize-meal_list.png"
-                                        title=""></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/recipe/main_screen.png"><img alt=""
-                                        class="image2" src=
-                                        "images/recipe/resize-main_screen.png"
-                                        title=""></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/recipe/ingredient_search.png"><img alt=""
-                                        class="image3" src=
-                                        "images/recipe/resize-ingredient_search.png"
-                                        title=""></a>
-                                    </li>
-
-                                    <li>
-                                        <a href=
-                                        "images/recipe/individual_recipe.png"><img alt=""
-                                        class="image4" src=
-                                        "images/recipe/resize-individual_recipe.png"
-                                        title=""></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="project-content col-md-6 col-sm-12 col-xs-12">
+                    <div class="project-content col-md-5 col-sm-12 col-xs-12">
                         <div class="project-subsection">
                             <div class="project-subtitle">
                                 When?
@@ -542,43 +375,39 @@
                                 <li>Testing and Debugging</li>
                             </ul>
                         </div>
-                    </div><!--End of Recipe Program-->
-                </div><!--End of Portfolio-->
-            </div><!--End of Content-->
-        </div><!--End of backimage-->
-    </div><!-- Modal -->
-
-    <div class="modal fade" id="myModal" tabindex="-1">
-        <div class="modal-dialog modal-sm">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button class="close" data-dismiss="modal" type=
-                    "button"><span>&times;</span><span class=
-                    "sr-only">Close</span></button>
-
-                    <h4 class="modal-title" id="myModalLabel">Send me an email
-                    or call (508) 247-7419</h4>
+                    </div>
+                      <div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:0px; margin-left:0px">
+                 			<div class="pikachoose horizontal"  style="padding-top:25px">
+	
+									<ul id="pikame3" class="jcarousel-skin-pika">
+										<li><img src="images/recipe/main_screen.png"/><span></span></li>
+										<li><img src="images/recipe/add_recipe.png"/><span></span></li>
+										<li><img src="images/recipe/ingredient_search.png"/><span></span></li>
+										<li><img src="images/recipe/individual_recipe.png"/><span></span></li>
+									</ul>
+							 	</div>
+						  	</div>
                 </div>
+                
 
-                <div class="modal-body">
-                    To: awfilipek@gmail.com<br style="margin-bottom:5px">
-                    Subject:<br>
-                    <input type="text"><br>
-                    Message:<br>
-                    <textarea cols="28" rows="4">
-</textarea><br>
-                    Your email address:<br>
-                    <input type="text"><br>
-                </div>
-
-                <div class="modal-footer">
-                    <button class="btn btn-default" data-dismiss="modal" type=
-                    "button">Close</button> <button class="btn btn-primary" id=
-                    "sendmessage" type="button">Send Message</button>
-                </div>
             </div>
         </div>
-    </div><script src=
-    "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <script src="javascripts/chessboard.js"></script> <script src="javascripts/animation.js"></script> <script src="javascripts/jquery.ad-gallery.js"></script> <script src="javascripts/miscellaneous.js"></script> <script src="javascripts/bootstrap.js"></script> 
+  	<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <!--<script src="javascripts/chessboard.js"></script>
+    <script src="javascripts/animation.js"></script>-->
+    <script src="javascripts/bootstrap.js"></script> 
+
+      <script type="text/javascript" src="javascripts/jquery.jcarousel.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.pikachoose.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.touchwipe.min.js"></script>
+		<!--<script type="text/javascript" src="javascripts/colorchanger.js"></script>-->
+		<script language="javascript">
+			$(document).ready(
+				function (){
+					$("#pikame").PikaChoose({carousel:true});
+					$("#pikame2").PikaChoose({carousel:true});
+					$("#pikame3").PikaChoose({carousel:true});
+				});
+		</script>
 </body>
 </html>

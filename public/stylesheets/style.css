@@ -1,9 +1,15 @@
 body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image:url('../images/zigzag_background.png');
+  #background-image:url('../images/zigzag_background.png');
   background-size:29%;
   overflow-y: scroll;
   overflow-x: hidden;
+	background-color:#530000;  
+  #background-color:#031415;
+}
+
+*{
+	font-family: "Verdana", cursive, sans-serif;	
 }
 
 h4{
@@ -39,7 +45,7 @@ padding-top:20px;
 }
 
 #backimage{
-background-image:url('../images/zigzag_background.png');
+#background-image:url('../images/zigzag_background.png');
 background-size:29%;
 margin-top:-30px;
 }
@@ -111,6 +117,7 @@ a:hover{
 #portfolioText {
 	font-size:54px;
 	color:#FFFFFF;
+	font-family:Courier;
 }
 
 .project-content{
@@ -121,6 +128,7 @@ a:hover{
 .project-title{
 	font-size:24px;	
 	text-align:center;
+		font-family: "Comic Sans MS", cursive, sans-serif;	
 	}
 	
 .project-subtitle{
@@ -129,7 +137,7 @@ a:hover{
 	}
 	
 .project-subsection{
-	margin-bottom:25px;	
+	margin-bottom:15px;	
 	}
 	
 #Commotion{
