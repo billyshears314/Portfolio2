@@ -172,7 +172,7 @@ a:hover{
 
 }	
 
-@media screen and (max-width: 570px){
+@media screen and (max-width: 580px){
 	
 		.navbar-header{height:75px}
 		#email{display:block}
