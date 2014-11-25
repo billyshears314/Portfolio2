@@ -4,8 +4,9 @@ body {
   background-size:29%;
   overflow-y: scroll;
   overflow-x: hidden;
-	background-color:#530000;  
+	background-color:#EAEAE1;  
   #background-color:#031415;
+  
 }
 
 *{
@@ -54,7 +55,7 @@ margin-top:-30px;
 padding-left: 50px;
 padding-right: 50px;
 padding-top:30px;
-color:#FFFFFF;
+color:#3e3e29;
 }
 
 #nav{
@@ -75,7 +76,7 @@ vertical-align: middel;
  text-shadow: black 0.1em 0.1em 0.1em;
 }
 a{
-color: #000000;
+color:#3e3e29;
 text-decoration: none;
 outline: 0;
 font-family: "Times New Roman", Times, serif;
@@ -97,7 +98,7 @@ a:hover{
 
 #signature {
 	font-size:34px;
-	color:#FFFFFF;
+	color:#3e3e29;
 	margin-left:10px;
    font-family: "My Custom Font", Verdana, Tahoma;
 }
@@ -106,7 +107,7 @@ a:hover{
  #position:absolute;
  #top:75px;
  #left:440px;
- color:#FFFFFF;
+ color:#3e3e29;
  font-size:16px;
 }
 
@@ -116,7 +117,7 @@ a:hover{
  
 #portfolioText {
 	font-size:54px;
-	color:#FFFFFF;
+	color:#3e3e29;
 	font-family:Courier;
 }
 
