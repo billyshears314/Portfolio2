@@ -21,13 +21,21 @@ p{
 	text-align:justify;		
 }
 
+hr{
+	color:#3e3e29;	
+}
+
 .title{
 	font-size:20px;	
 	}
+	
+.github_link{
+	margin-top:15px;	
+}
 
 #chess{
 	color: #000000;	
-	}
+}
 
 .jumbotron{
 #background-image:url('../images/chess_game.jpg');
@@ -119,6 +127,10 @@ a:hover{
 	font-size:54px;
 	color:#3e3e29;
 	font-family:Courier;
+}
+
+.project_item{
+	padding-bottom:25px;
 }
 
 .project-type-title{

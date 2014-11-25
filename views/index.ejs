@@ -120,7 +120,7 @@
     <div id="backimage">
 
         <div id="content">
-              <hr style="border-width:3px">
+    
             <div class="col-md-12 col-sm-12 col-xs-12 bootstrap" id="about">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <img height="180" src="images/fun_profile3.jpg" style=
@@ -167,7 +167,7 @@
                 <center><span id="portfolioText">Portfolio</span><br></center>
                 <hr>
 					
-                <div class="col-md-12 col-sm-12 col-xs-12" id="PicStreamer">
+                <div class="col-md-12 col-sm-12 col-xs-12 project_item" id="PicStreamer">
                     <center>
                         <b class="project-title">Pic Streamer</b><br>
                     </center>
@@ -175,7 +175,11 @@
 							       	<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:0px; margin-left:0px">
 
 							<img src="images/picstreamerScreenShot2.png" width="570px" height="320px" style="border-radius:5px;margin-top:30px;margin-right:25px"></img>                    	
-
+								
+								<div class="github_link">
+								    <a href="https://github.com/billyshears314/PicStreamer"
+                       	 		style="color:#3e3e29;font-size:16px">https://github.com/billyshears314/PicStreamer</a>
+                        </div>
 							</div>
 
                     <div class="project-content col-md-5 col-sm-12 col-xs-12">
@@ -208,7 +212,10 @@
                                 Project Description
                             </div>
 
-                            <p>See a stream of real time instagram pictures being uploaded by their hashtag.  Also, there is a google map that pans to the location of each new picture and adds a pin.</p>
+                            <p>See a stream of real time Instagram pictures being uploaded by their hashtag.  
+                            Also, there is a google map that pans to the location of each new picture and adds 
+                            a pin.  The green pin shows the current pic location and red pins show the positions of 
+                            past pictures streamed.</p>
                         </div>
 
                         <div class="project-subsection">
@@ -217,25 +224,23 @@
                             </div>
 
                             <ul>
-                                <li>Creating the layout and design for most of
-                                the pages</li>
+                                <li>Set a timer to an Ajax request to get recent Instagram pics by their hashtag using the Instagram API.</li>
 
-                                <li>Connecting the front end to work with the
-                                back end</li>
+                                <li>Added implementation of Google Maps API to use location data from Instagram pics to pan to their location and add a pin.</li>
 
-                                <li>Also made a few custom complex SQL
-                                queries</li>
+                                <li>Optimized web app to make a request for a group of pictures rather than an individual pic at a time and to cache the rest.</li>
+                                
+                                <li>Designed and styled page
                             </ul>
-                        </div><a href="https://github.com/billyshears314/PicStreamer"
-                        style=
-                        "color:#3e3e29;font-size:16px">https://github.com/billyshears314/PicStreamer</a>
+                        
+                        </div>
                     </div>
    
                     </div><!--End of Pic Streamer-->
 					
 					<hr class="col-md-12 col-sm-12 col-xs-12">
 					
-					<div class="col-md-12 col-sm-12 col-xs-12" id="3dMultiplayerMaze">
+					<div class="col-md-12 col-sm-12 col-xs-12  project_item" id="3dMultiplayerMaze">
                     <center>
                         <b class="project-title">3d Multiplayer Maze</b><br>
                     </center>
@@ -262,7 +267,7 @@
                                 What was used?
                             </div>
 
-                            <p>Node.js, Webgl, Three.js, Socket.io, keyboard.js</p>
+                            <p>Node.js, Webgl, Three.js, Socket.io, Keyboard.js</p>
                         </div>
 
                         <div class="project-subsection">
@@ -270,7 +275,7 @@
                                 Project Description
                             </div>
 
-                            <p>Find your way out of a 3d Maze.  Other player can go to the site to enter the maze and compete against you.</p>
+                            <p>Find your way out of a 3d Maze.  Other players can go to the site to enter the maze and compete against you.</p>
                         </div>
 
                         <div class="project-subsection">
@@ -283,22 +288,24 @@
                                 <li>Implemented the control system to work with the camera</li>
                                 <li>Added multiplayer functionality using Socket.io</li>
                             </ul>
-                        </div><a href="https://github.com/billyshears314/3dMazeMultiplayer"
-                        style=
-                        "color:#3e3e29;font-size:16px">https://github.com/billyshears314/3dMazeMultiplayer</a>
+                        </div>
                     </div>
                     
                     <div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:0px; margin-left:0px">
                     	
                     		<img src="images/maze.png" width="570px" height="320px" style="border-radius:5px;margin-top:30px;margin-left:25px;border-style:solid;border-width:3px"></img>
-
+									<div class="github_link" style="margin-left:25px">									
+										<a href="https://github.com/billyshears314/3dMazeMultiplayer"
+                        		style="color:#3e3e29;font-size:16px">https://github.com/billyshears314/3dMazeMultiplayer
+                       	 		</a>
+                       		</div>
 							</div>
    
                     </div><!--End of 3d Maze Multiplayer-->
 					
 					<hr class="col-md-12 col-sm-12 col-xs-12">
 					
-					 <div class="col-md-12 col-sm-12 col-xs-12" id="Titan">
+					 <div class="col-md-12 col-sm-12 col-xs-12  project_item" id="Titan">
                     <center>
                         <b class="project-title">Titan</b><br>
                     </center>                    
@@ -306,7 +313,12 @@
                     	<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:0px; margin-left:0px">
 
 							<img src="images/titanScreenShot.png" width="570px" height="320px" style="border-radius:5px;margin-top:30px;margin-right:25px"></img>                    	
-
+		
+								<div class="github_link">
+									<a href="https://github.com/billyshears314/Titan"
+                       		 style="color:#3e3e29;font-size:16px">https://github.com/billyshears314/Titan
+                        	</a>
+                        </div>
 							</div>
 
                     <div class="project-content col-md-5 col-sm-12 col-xs-12">
@@ -357,16 +369,14 @@
                                 <li>Also made a few custom complex SQL
                                 queries</li>
                             </ul>
-                        </div><a href="https://github.com/billyshears314/Titan"
-                        style=
-                        "color:#3e3e29;font-size:16px">https://github.com/billyshears314/Titan</a>
+                        </div>
                     </div>
    
                     </div><!--End of Titan-->
 
 					<hr class="col-md-12 col-sm-12 col-xs-12">					
 
-                <div class="col-md-12 col-sm-12 col-xs-12" id="Commotion">
+                <div class="col-md-12 col-sm-12 col-xs-12  project_item" id="Commotion">
                     <center>
                         <b class="project-title">ComMotion</b><br>
                     </center>
@@ -423,9 +433,7 @@
                                 <li>Also made a few custom complex SQL
                                 queries</li>
                             </ul>
-                        </div><a href="https://github.com/r3d3y3/ComMotion"
-                        style=
-                        "color:#3e3e29;font-size:16px">https://github.com/r3d3y3/ComMotion</a>
+                        </div>
                     </div>
    
                     	<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:0px; margin-left:0px">
@@ -442,15 +450,20 @@
 										<li><img src="images/commotion/followers.png"/><span>See who your followers are</span></li>
 										<li><img src="images/commotion/locker.png"/><span>Post a message/See messages of people you are following</span></li>
 										<li><img src="images/commotion/profile.png"/><span>Look at user information</span></li>	
-									
+										
 									</ul>
 								</div>
+								<div class="github_link" style="margin-left:90px;margin-top:10px">
+									<a href="https://github.com/r3d3y3/ComMotion"
+                        	style="color:#3e3e29;font-size:16px">https://github.com/r3d3y3/ComMotion
+                       	 	</a>
+                        </div>
 							</div>
                     </div><!--End of ComMotion-->
              
                 <hr class="col-md-12 col-sm-12 col-xs-12">
 
-                <div class="col-md-12 col-sm-12 col-xs-12" id="GeoMusic">
+                <div class="col-md-12 col-sm-12 col-xs-12  project_item" id="GeoMusic">
                     <center>
                         <b class="project-title">GeoMusic</b><span style="position:absolute; top:-5px"><img src=
                         "images/geomusic_icon.png" style=
@@ -566,7 +579,7 @@
                             request of a friend of mine. The idea is that you
                             can input recipes and then search through them
                             either by name or by ingredients. Then you can see
-                            the recipe for the meal you select in a standard
+                            the recipe for the meal you select in a nice standard
                             format.</p>
                         </div>
 
@@ -585,7 +598,7 @@
                             </ul>
                         </div>
                     </div>
-                      <div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:0px; margin-left:0px">
+                      <div class="col-md-6 col-sm-12 col-xs-12  project_item" style="padding-left:0px; margin-left:0px">
                  			<div class="pikachoose horizontal"  style="padding-top:25px">
 	
 									<ul id="pikame3" class="jcarousel-skin-pika">
