@@ -122,6 +122,10 @@ a:hover{
 #about{
 	margin-bottom:30px;	
 }
+
+#technical_skills_list li{
+	margin-bottom:18px;	
+}
  
 #portfolioText {
 	font-size:54px;
