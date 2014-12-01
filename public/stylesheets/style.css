@@ -155,8 +155,14 @@ a:hover{
 	}
 	
 .project-subsection{
-	margin-bottom:15px;	
+	margin-bottom:18px;	
 	}
+	
+.project-subsection p{
+	padding-bottom:0px;
+	padding-top:0px;
+	margin-top:7px;	
+}	
 	
 #Commotion{
 	margin-bottom:20px;		
