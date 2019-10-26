@@ -5,7 +5,7 @@
     <link href='/stylesheets/bootstrap.css' rel='stylesheet'>
     <link type="text/css" href="stylesheets/bottom.css" rel="stylesheet" />
     <link href='/stylesheets/style.css' rel='stylesheet'>
-    
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 </head>
 
@@ -65,47 +65,47 @@
                             <li>
                                 <a href="#RecipeProgram">Recipe Program</a>
                             </li>
-                            
+
                         </ul>
                     </li>
                 </ul>
             </div>
-        </div> 
+        </div>
     </nav>
     </div><!--
-        <div id="chess" style="display:inline;float:left;position:absolute;top:40px;left:40px"> 
-        
-            <h3 style="margin-top:60px;font-size:18px">World Championship (1972)</h3>   
-            <h3 style="font-size:18px;margin-top:10px">Game 8</h3>  
+        <div id="chess" style="display:inline;float:left;position:absolute;top:40px;left:40px">
+
+            <h3 style="margin-top:60px;font-size:18px">World Championship (1972)</h3>
+            <h3 style="font-size:18px;margin-top:10px">Game 8</h3>
             <h4 style="position:absolute;left:152px;font-weight:bold">Spassky</h4>
-        
+
             <div class="board" style="border-style:solid;border-width:2px;height:228px;width:228px;margin-left:75px;margin-top:40px">
-            
+
                 <% for(var i=0; i<8; i++) {%>
-                
+
                     <div class="row" style="margin-left:0px">
-    
+
                         <% for (var j=0; j<8; j++) { %>
-    
+
                             <div id=<%=j+i*8%> class="space" style="width:28px;height:28px;display:inline;float:left; background-color:#FFFFFF;margin-right:0px">
                                 <div class="piece">
                                     <img style="width:25px; height:25px"></img>
                                 </div>
                             </div>
-    
+
                         <% } %>
-        
+
                     </div>
-                    
+
                 <% } %>
-        
+
             </div>
-        
+
             <h4 style="position:absolute;left:157px;top:380px;font-weight:bold">Fischer</h4>
-        
+
         </div>
 -->
-    <!--    
+    <!--
         <div id="nav">
             <ul>
                 <li data-toggle="modal" data-target="#myModal"><a id="contactbutton">Contact</a></li>
@@ -120,7 +120,7 @@
     <div id="backimage">
 
         <div id="content">
-    
+
             <div class="col-md-12 col-sm-12 col-xs-12 bootstrap" id="about">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <img height="180" src="images/fun_profile3.jpg" style=
@@ -129,18 +129,10 @@
 
                     <h4><strong>Bio</strong></h4>
 
-                    <p>My name is Alexander Filipek and I have a background in using both the
-                    Node.js and Ruby on Rails web frameworks.  I like to constantly learn
-                    and work with new languages and tools.  I graduated from the University of
-                    Massachusetts Amherst majoring in Computer Science in
-                    2014.  Since then I've been learning everything and anything I can about all aspects
-                    of web development.</p>
+                    <p>My name is Alexander Filipek and I have a background in various software development including full stack web development and iOS app development.  I am constantly learning
+                    and work with new languages and tools and enjoy being out of my comfort zone.  I like challenging work and pushing the boundaries of what is possible with technology.</p>
 
-                    <p>I enjoy working with Ruby on Rails as I find myself to be the most productive and organized with it.  I
-                    have worked with all levels of the stack and have enough varied experience to understand some of the deeper
-                    issues of web development.</p>
-                    
-                
+
                 </div>
 
                 <div class="col-md-6 col-sm-12 col-xs-12" style=
@@ -150,25 +142,25 @@
                     <ul id="technical_skills_list">
                         <li><strong>Web Frameworks:</strong>
                         Node.js, Ruby on Rails</li>
-                        
+
                         <li><strong>Front End: </strong>HTML, CSS, Javascript, JQuery, Angular.js, Ejs, Haml, Sass</li>
-                        
+
                         <li><strong>Databases: </strong>MongoDB and MySQL</li>
-                        
+
                         <li><strong>Programming Languages: </strong>Java, Ruby, Python, C/C++</li>
-                        
+
                         <li><strong>Miscellaneous: </strong>Git/Github</li>
-             
+
                     </ul>
 
                 </div>
-          
+
             </div>
 
             <div id="portfolio">
                 <center><span id="portfolioText">Portfolio</span><br></center>
                 <hr>
-					
+
                 <div class="col-md-12 col-sm-12 col-xs-12 project_item" id="PicStreamer">
                     <center>
                          <b class="project-title">Pic Streamer</b><br>
@@ -176,9 +168,9 @@
 
 							       	<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:0px; margin-left:0px">
 							<a href="http://picstreamer.herokuapp.com">
-							<img src="images/picstreamerScreenShot2.png" width="570px" height="320px" style="border-radius:5px;margin-top:30px;margin-right:25px"></img>                    	
-							</a>							
-							
+							<img src="images/picstreamerScreenShot2.png" width="30%" height="auto" style="border-radius:5px;margin-top:30px;margin-right:25px; max-width:570px;"></img>
+							</a>
+
 								<div class="github_link">
 								<p>
 									<strong>Source: </strong>
@@ -223,9 +215,9 @@
                                 Project Description
                             </div>
 
-                            <p>See a stream of real time Instagram pictures being uploaded by their hashtag.  
-                            Also, there is a google map that pans to the location of each new picture and adds 
-                            a pin.  The green pin shows the current pic location and red pins show the positions of 
+                            <p>See a stream of real time Instagram pictures being uploaded by their hashtag.
+                            Also, there is a google map that pans to the location of each new picture and adds
+                            a pin.  The green pin shows the current pic location and red pins show the positions of
                             past pictures streamed.</p>
                         </div>
 
@@ -240,17 +232,17 @@
                                 <li>Added implementation of Google Maps API to use location data from Instagram pics to pan to their location and add a pin.</li>
 
                                 <li>Optimized web app to make a request for a group of pictures rather than an individual pic at a time and to cache the rest.</li>
-                                
+
                                 <li>Designed and styled page
                             </ul>
-                        
+
                         </div>
                     </div>
-   
+
                     </div><!--End of Pic Streamer-->
-					
+
 					<hr class="col-md-12 col-sm-12 col-xs-12">
-					
+
 					<div class="col-md-12 col-sm-12 col-xs-12  project_item" id="3dMultiplayerMaze">
                     <center>
                         <b class="project-title">3d Multiplayer Maze</b><br>
@@ -301,36 +293,36 @@
                             </ul>
                         </div>
                     </div>
-                    
+
                     <div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:0px; margin-left:0px">
-                    	
-                    		<img src="images/maze.png" width="570px" height="320px" style="border-radius:5px;margin-top:30px;margin-left:25px;border-style:solid;border-width:3px"></img>
-									<div class="github_link" style="margin-left:25px">			
+
+                    		<img src="images/maze.png" width="100%" height="auto;" style="border-radius:5px;margin-top:30px;margin-left:25px;border-style:solid;border-width:3px; max-width:570px;"></img>
+									<div class="github_link" style="margin-left:25px">
 									<p>
-										<strong>Source: </strong>						
+										<strong>Source: </strong>
 										<a href="https://github.com/billyshears314/3dMazeMultiplayer"
                         		style="color:#3e3e29;font-size:16px">https://github.com/billyshears314/3dMazeMultiplayer
                        	 		</a>
                        	 	</p>
                        		</div>
 							</div>
-   
+
                     </div><!--End of 3d Maze Multiplayer-->
-					
+
 					<hr class="col-md-12 col-sm-12 col-xs-12">
-					
+
 					 <div class="col-md-12 col-sm-12 col-xs-12  project_item" id="Titan">
                     <center>
                         <b class="project-title">Titan</b><br>
-                    </center>                    
-                    
+                    </center>
+
                     	<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:0px; margin-left:0px">
 
-							<img src="images/titanScreenShot.png" width="570px" height="320px" style="border-radius:5px;margin-top:30px;margin-right:25px"></img>                    	
-		
+							<img src="images/titanScreenShot.png" width="100%" height="auto" style="border-radius:5px;margin-top:30px;margin-right:25px; max-width:570px;"></img>
+
 								<div class="github_link">
 									<p>
-									<strong>Source: </strong>									
+									<strong>Source: </strong>
 									<a href="https://github.com/billyshears314/Titan"
                        		 style="color:#3e3e29;font-size:16px">https://github.com/billyshears314/Titan
                         	</a>
@@ -383,10 +375,10 @@
                             </ul>
                         </div>
                     </div>
-   
+
                     </div><!--End of Titan-->
 
-					<hr class="col-md-12 col-sm-12 col-xs-12">					
+					<hr class="col-md-12 col-sm-12 col-xs-12">
 
                 <div class="col-md-12 col-sm-12 col-xs-12  project_item" id="Commotion">
                     <center>
@@ -447,10 +439,10 @@
                             </ul>
                         </div>
                     </div>
-   
+
                     	<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:0px; margin-left:0px">
 	                    	<div class="pikachoose horizontal"  style="padding-top:25px">
-	
+
 									<ul id="pikame" class="jcarousel-skin-pika">
 										<li><img src="images/commotion/create_exercise.png"/><span>Fill out this form to create an exercise</span></li>
 										<li><img src="images/commotion/create_profile.png"/><span>Fill out this form to fill in your user information</span></li>
@@ -461,8 +453,8 @@
 										<li><img src="images/commotion/findusers.png"/><span>You can see the most popular users or search for others on the left</span></li>
 										<li><img src="images/commotion/followers.png"/><span>See who your followers are</span></li>
 										<li><img src="images/commotion/locker.png"/><span>Post a message/See messages of people you are following</span></li>
-										<li><img src="images/commotion/profile.png"/><span>Look at user information</span></li>	
-										
+										<li><img src="images/commotion/profile.png"/><span>Look at user information</span></li>
+
 									</ul>
 								</div>
 								<div class="github_link" style="margin-left:90px;margin-top:10px">
@@ -475,16 +467,16 @@
                        	 <p>
 									<strong>Demo: </strong>
 									<a href="http://commotion.herokuapp.com" style="color:#3e3e29;font-size:16px">
-									http://commotion.herokuapp.com									
-									</a>                    	 
+									http://commotion.herokuapp.com
+									</a>
                        	 </p>
                        	 <p>
-                       	 Log in with username "dorianYates" and password "commotion"                          	 
+                       	 Log in with username "dorianYates" and password "commotion"
                        	 </p>
                         </div>
 							</div>
                     </div><!--End of ComMotion-->
-             
+
                 <hr class="col-md-12 col-sm-12 col-xs-12">
 
                 <div class="col-md-12 col-sm-12 col-xs-12  project_item" id="GeoMusic">
@@ -493,10 +485,10 @@
                         "images/geomusic_icon.png" style=
                         "width:45px; height:45px;margin-left:10px"><br></span>
                     </center>
-                    
+
                  		<div class="col-md-6 col-sm-12 col-xs-12" style="padding-left:0px; margin-left:0px">
                  			<div class="pikachoose vertical"  style="padding-top:25px">
-	
+
 									<ul id="pikame2" class="jcarousel-skin-pika">
 										<li><img src="images/geomusic/zoomout.png"/></li>
 										<li><img src="images/geomusic/normalzoom.png"/></li>
@@ -624,7 +616,7 @@
                     </div>
                       <div class="col-md-6 col-sm-12 col-xs-12  project_item" style="padding-left:0px; margin-left:0px">
                  			<div class="pikachoose horizontal"  style="padding-top:25px">
-	
+
 									<ul id="pikame3" class="jcarousel-skin-pika">
 										<li><img src="images/recipe/main_screen.png"/><span></span></li>
 										<li><img src="images/recipe/add_recipe.png"/><span></span></li>
@@ -634,13 +626,13 @@
 							 	</div>
 						  	</div>
                 </div>
-                
+
             </div>
         </div>
   	<script type="text/javascript" src=" https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
     <!--<script src="javascripts/chessboard.js"></script>
     <script src="javascripts/animation.js"></script>-->
-    <script src="javascripts/bootstrap.js"></script> 
+    <script src="javascripts/bootstrap.js"></script>
 
       <script type="text/javascript" src="javascripts/jquery.jcarousel.min.js"></script>
 		<script type="text/javascript" src="javascripts/jquery.pikachoose.min.js"></script>
@@ -653,7 +645,7 @@
 					$("#pikame2").PikaChoose({carousel:true});
 					$("#pikame3").PikaChoose({carousel:true});
 				});
-		
+
 		</script>
 </body>
 </html>

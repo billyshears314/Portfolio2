@@ -21,17 +21,6 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-var nodemailer = require("nodemailer");
-
-var smtpTransport = nodemailer.createTransport("SMTP",{
-   service: "Gmail",
-   auth: {
-       user: "awfilipek@gmail.com",
-       pass: "broadway314159265358979"
-   }
-});
-
-
 app.use('/', routes);
 app.use('/users', users);
 
